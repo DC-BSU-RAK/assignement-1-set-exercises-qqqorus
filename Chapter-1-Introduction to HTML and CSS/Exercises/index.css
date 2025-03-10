@@ -32,9 +32,9 @@ div {
 
 footer {
     background-color: #783719;
-    color: #f8edd6;
-    padding: 3%;
+    padding: 2%;
     flex: 1;
+    display: inline-block;
 }
 
 header {
@@ -44,6 +44,77 @@ header {
     text-decoration: none;
     position: relative;
     top: -8px;
+    display: inline-block;
+    height: 20px;
+}
+
+#headerlogo {
+    display: inline-block; 
+    font-family: Pulang; 
+    font-size: 25px; 
+    padding: 0px; 
+    margin: 0px;
+    color: #f1ce82;
+    margin-right: 50px;
+}
+.navheader {
+    font-family: 'Louis George';
+    font-size: 18px;
+    color: #f8edd6;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navheader:hover {
+    color: #f1ce82;
+}
+
+label {
+    font-family: 'Louis George';
+    text-align: justify;
+    line-height: 2px;
+    font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 300px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+}
+
+textarea[name="comment"] {
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#submit1 {
+    border-radius: 5px;
+    background-color: #f8edd6;
+    color: #51230e;
+    font-size: 15px;
+    font-family: 'Louis George';
+}
+
+#submit2 {
+    border-radius: 5px;
+    background-color: #51230e;
+    color: #f8edd6;
+    font-size: 20px;
+    font-family: 'Louis George';
+}
+
+.conclusion {
+    font-family: Pulang; 
+    font-size: 30px; 
+    line-height: 2px;
+    display: inline-block;
 }
 
 hr {
@@ -57,6 +128,28 @@ p, h2, li {
 
 table {
     border-spacing: 50px;
+}
+
+.navfooter {
+    float: left;
+    font-family: 'Louis George';
+    font-size: 18px;
+    color: #f8edd6;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navfooter:hover {
+    color: #f1ce82;
+}
+
+#tm {
+    text-align: right;
+    font-family: 'Louis George';
+    font-size: 18px;
+    color: #f8edd6;
+    text-decoration: none;
+    margin-right: 20px;
 }
 
 @font-face {
