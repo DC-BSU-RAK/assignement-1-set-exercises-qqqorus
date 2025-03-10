@@ -32,7 +32,7 @@ div {
 
 footer {
     background-color: #783719;
-    padding: 2%;
+    padding: 1%;
     flex: 1;
     display: inline-block;
 }
@@ -57,6 +57,15 @@ header {
     color: #f1ce82;
     margin-right: 50px;
 }
+
+.searchbar {
+    font-size: 14px;
+    padding: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 10px;
+}
+
 .navheader {
     font-family: 'Louis George';
     font-size: 18px;
