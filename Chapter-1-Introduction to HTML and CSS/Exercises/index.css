@@ -136,7 +136,28 @@ p, h2, li {
 }
 
 table {
-    border-spacing: 50px;
+    border-spacing: 0px;
+    margin: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-spacing: 20px;
+}
+
+td {
+    padding: 10px;
+}
+
+#chickpic {
+    height: 300;
+    width: 330px;
+    float: left;
+    margin-right: 20px;
+}
+
+pre {
+    margin: 0;
+    padding: 0;
+    font-family: 'Louis George';
 }
 
 .navfooter {
