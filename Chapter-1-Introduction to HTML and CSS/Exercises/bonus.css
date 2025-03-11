@@ -8,3 +8,24 @@ Include a minimum of 10 HTML tags.
 Include a minimum of 8 CSS properties.
 Include a variety of different headers.
 Make sure the code is indented and spaced properly. */
+
+a {
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+p {
+    font-size: 30px;
+}
+
+#titlehtml {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+
+#titlecss {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown;
+}
