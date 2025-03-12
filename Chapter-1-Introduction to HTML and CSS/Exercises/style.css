@@ -21,7 +21,7 @@ div {
     background-color:#f8edd6;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
     border-radius: 40px;
     padding-left: 40px;
@@ -45,7 +45,6 @@ header {
     position: relative;
     top: -8px;
     display: inline-block;
-    height: 20px;
 }
 
 #headerlogo {
@@ -135,16 +134,24 @@ p, h2, li {
     text-align: justify;
 }
 
-table {
-    border-spacing: 0px;
-    margin: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.table1 {
     border-spacing: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.table2 {
+    border-spacing: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 td {
-    padding: 10px;
+    padding: 0px;
 }
 
 #chickpic {
@@ -169,8 +176,18 @@ pre {
     margin-right: 20px;
 }
 
-.navfooter:hover {
-    color: #f1ce82;
+#fb:hover {
+    color: rgb(5, 97, 163);
+}
+
+#ig:hover {
+    background: linear-gradient(to right, purple, rgb(229, 92, 197), red, orange, yellow);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#twt:hover {
+    color: rgb(110, 199, 255);
 }
 
 #tm {
