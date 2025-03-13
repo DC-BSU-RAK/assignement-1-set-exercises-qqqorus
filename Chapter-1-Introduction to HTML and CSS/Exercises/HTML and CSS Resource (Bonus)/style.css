@@ -33,7 +33,19 @@ table {
       
 th, td {
     text-align: left;
-    padding: 16px;
+    padding: 15px;
+}
+
+code {
+    font-size: 14px;
+}
+
+td {
+    font-size: 15px;
+}
+
+tr {
+    border: 1px solid #ddd;
 }
 
 .header {
