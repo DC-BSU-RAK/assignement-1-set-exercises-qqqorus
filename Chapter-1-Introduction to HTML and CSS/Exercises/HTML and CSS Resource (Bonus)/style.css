@@ -50,6 +50,10 @@ header {
     margin-right: 20px;
 }
 
+.navheader:hover {
+    color: antiquewhite;
+}
+
 #searchbar {
     font-size: 14px;
     padding: 10px;
@@ -65,9 +69,16 @@ header {
     display: inline;
 }
 
-#title {
-    color: #dee8df;
+.title {
+    color: #244c43;
     text-align: center;
+}
+
+.divstyle {
+    border-radius: 20px;
+    background-color: #d6ccc2;
+    margin: 2% 15% 5% 15%;
+    padding: 10px;
 }
 
 .table {
@@ -75,7 +86,7 @@ header {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 70%;
     padding: 5px;
 }
 
@@ -88,11 +99,19 @@ table {
     color: #244c43;
 }
 
+article {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: #244c43;
+}
+
 code {
     font-family: monospace;
 }
 
-th, td {
+th {
+    background-color: #a29b94;
     text-align: left;
     padding: 15px;
 }
@@ -103,12 +122,10 @@ code {
 
 td {
     font-size: 15px;
+    text-align: left;
+    padding: 15px;
 }
 
 tr {
     border: 1px solid #ddd;
-}
-
-.header {
-    background-color: #d6ccc2;
 }

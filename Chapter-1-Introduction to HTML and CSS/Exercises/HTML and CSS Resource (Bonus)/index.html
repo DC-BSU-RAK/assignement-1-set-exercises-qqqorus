@@ -23,8 +23,8 @@ Make sure the code is indented and spaced properly. -->
 <header>
     <nav>
         <h1 id="headername">HTML & CSS Resource</h1> 
-        <a name="" class="navheader">HTML</a>
-        <a name="" class="navheader">CSS</a>
+        <a href="#HTML" class="navheader">HTML</a>
+        <a href="#CSS" class="navheader">CSS</a>
         <!-- The search bar which is made by implementing the form tag -->
         <form id="form">
             <!-- The search bar doesn't have a code to actualy search so it is also for display -->
@@ -34,210 +34,270 @@ Make sure the code is indented and spaced properly. -->
     </nav>
 </header>
 
-<div>
-    <h1 id="title">HTML & CSS Resource</h1>
+<div class="divstyle">
+    <a name="HTML"><h1 class="title">HyperText Markup Language (HTML)</h1></a>
+    <article>
+        <p>&emsp;HTML (HyperText Markup Language) is the standard markup language used to structure and design web pages.
+        It defines how text, images, and multimedia content are displayed in a web browser.</p>
+        <ul>
+            <li>HTML uses tags and elements to organize content on a webpage.</li>
+            <li>It was created by Tim Berners-Lee in 1990 for sharing documents over the Internet.</li>
+            <li>HTML is the foundation of web development, making websites accessible and organized.</li>
+        </ul>
+        
+        <h3>HTML Components</h3>
+    </article>
+    
+    <table class="table">
+        <tr>
+            <th>Components</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>&lt;!DOCTYPE html&gt;</code></td>
+            <td>Declares the document type and version of HTML, ensuring proper rendering by browsers.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;html&gt;</code></td>
+            <td>The root element that encompasses all other HTML elements, indicating the beginning and end of the document.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;head&gt;</code></td>
+            <td>It contains meta-information about the HTML page.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;title&gt;</code></td>
+            <td>Sets the title of the webpage, which appears on the browser’s title bar or tab.</td>
+        </tr>
+        <tr>
+            <td><code>&lt;body&gt;</code></td>
+            <td>Encloses all the visible content of the webpage, including text, images, links, and other media.</td>
+        </tr>
+        <tr>
+            <td><code>Tags</code></td>
+            <td>Keywords enclosed in angle brackets (e.g., &lt;p&gt;, &lt;a&gt;) that define elements within the document.</td>
+        </tr>
+        <tr>
+            <td><code>Attributes</code></td>
+            <td>Provide additional information about elements, specified within the opening tag (e.g., href in &lt;a href=”url”&gt;).</td>
+        </tr>
+        <tr>
+            <td><code>Elements</code></td>
+            <td>It is a collection of start and end tags with the content inserted in between them.</td>
+        </tr>
+        <tr>
+            <td><code>Heading</code></td>
+            <td>Defined by &lt;h1&gt; to &lt;h6&gt; tags, representing six levels of headings, with &lt;h1&gt; being the highest and &lt;h6&gt; the lowest.</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <article>
+        <h3>HTML Elements and Tags</h3>
+        <p>&emsp;An HTML element is a fundamental building block of an HTML document, consisting of:</p>
+        <ul>
+            <li><b>Start Tag:</b> Marks the beginning of the element.</li>
+            <li><b>Content:</b> The information or material enclosed within the element.</li>
+            <li><b>End Tag:</b> Marks the end of the element.</li>
+        </ul>
+        <p>Below are some popular <b>HTML Tags:</b></p>
+    </article>
+
+    <table class="table">
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>&lt;!--...--&gt;</code></td>
+            <td>This defines a comment</td>
+        </tr>
+        <tr>
+            <td><code>&lt;!DOCTYPE&gt;</code></td>
+            <td>The header tag defines the document type</td>
+        </tr>
+        <tr>
+            <td><code>&lt;header&gt;</code></td>
+            <td>The header tag defines a header for a document or section</td>
+        </tr>
+        <tr>
+            <td><code>&lt;footer&gt;</code></td>
+            <td>The footer tag defines a footer for a document or section</td>
+        </tr>
+        <tr>
+            <td><code>&lt;style&gt;</code></td>
+            <td>The style tag defines style information for a document</td>
+        </tr>
+        <tr>
+            <td><code>&lt;p&gt;</code></td>
+            <td>The p tag defines a paragraph</td>
+        </tr>
+        <tr>
+            <td><code>&lt;h1&gt; to &lt;h1&gt;</code></td>
+            <td>These tags define HTML headings</td>
+        </tr>
+        <tr>
+            <td><code>&lt;ul&gt;</code></td>
+            <td>The ul tag defines an unordered list</td>
+        </tr>
+        <tr>
+            <td><code>&lt;ol&gt;</code></td>
+            <td>The ol tag defines an ordered list</td>
+        </tr>
+        <tr>
+            <td><code>&lt;li&gt;</code></td>
+            <td>The li tag defines a list item</td>
+        </tr>
+        <tr>
+            <td><code>&lt;pre&gt;</code></td>
+            <td>The pre tag defines preformatted text</td>
+        </tr>
+        <tr>
+            <td><code>&lt;img&gt;</code></td>
+            <td>The img tag defines style an image</td>
+        </tr>
+        <tr>
+            <td><code>&lt;video&gt;</code></td>
+            <td>The video tag defines embedded video content</td>
+        </tr>
+        <tr>
+            <td><code>&lt;audio&gt;</code></td>
+            <td>The audio tag defines embedded sound content</td>
+        </tr>
+        <tr>
+            <td><code>&lt;a&gt;</code></td>
+            <td>The a tag defines a hyperlink</td>
+        </tr>
+        <tr>
+            <td><code>&lt;br&gt;</code></td>
+            <td>The br tag defines a single line break</td>
+        </tr>
+        <tr>
+            <td><code>&lt;button&gt;</code></td>
+            <td>The button tag defines a clickable button</td>
+        </tr>
+        <tr>
+            <td><code>&lt;nav&gt;</code></td>
+            <td>The nav tag defines navigation links</td>
+        </tr>
+        <tr>
+            <td><code>&lt;form&gt;</code></td>
+            <td>The form tag defines an HTML form for user input</td>
+        </tr>
+        <tr>
+            <td><code>&lt;input&gt;</code></td>
+            <td>The input tag defines an input control</td>
+        </tr>
+        <tr>
+            <td><code>&lt;label&gt;</code></td>
+            <td>The label tag defines a label for an &lt;input&gt; element</td>
+        </tr>
+        <tr>
+            <td><code>&lt;div&gt;</code></td>
+            <td>The div tag defines a section in a document</td>
+        </tr>
+        <tr>
+            <td><code>&lt;table&gt;</code></td>
+            <td>The table tag defines a table</td>
+        </tr>
+    </table>
 </div>
 
-<table class="table">
-    <tr>
-        <th colspan="2" class="header">HyperText Markup Language (HTML)</th>
-    </tr>
-    <tr>
-        <td><b>Tag</b></td>
-        <td><b>Description</b></td>
-    </tr>
-    <tr>
-        <td><code>&lt;!--...--&gt;</code></td>
-        <td>This defines a comment</td>
-    </tr>
-    <tr>
-        <td><code>&lt;!DOCTYPE&gt;</code></td>
-        <td>The header tag defines the document type</td>
-    </tr>
-    <tr>
-        <td><code>&lt;body&gt;</code></td>
-        <td>The body tag defines the document's body</td>
-    </tr>
-    <tr>
-        <td><code>&lt;header&gt;</code></td>
-        <td>The header tag defines a header for a document or section</td>
-    </tr>
-    <tr>
-        <td><code>&lt;footer&gt;</code></td>
-        <td>The footer tag defines a footer for a document or section</td>
-    </tr>
-    <tr>
-        <td><code>&lt;head&gt;</code></td>
-        <td>The head tag contains metadata/information for the document</td>
-    </tr>
-    <tr>
-        <td><code>&lt;style&gt;</code></td>
-        <td>the style tag defines style information for a document</td>
-    </tr>
-    <tr>
-        <td><code>&lt;p&gt;</code></td>
-        <td>The p tag defines a paragraph</td>
-    </tr>
-    <tr>
-        <td><code>&lt;h1&gt; to &lt;h1&gt;</code></td>
-        <td>These tags define HTML headings</td>
-    </tr>
-    <tr>
-        <td><code>&lt;ul&gt;</code></td>
-        <td>The ul tag defines an unordered list</td>
-    </tr>
-    <tr>
-        <td><code>&lt;ol&gt;</code></td>
-        <td>The ol tag defines an ordered list</td>
-    </tr>
-    <tr>
-        <td><code>&lt;li&gt;</code></td>
-        <td>The li tag defines a list item</td>
-    </tr>
-    <tr>
-        <td><code>&lt;pre&gt;</code></td>
-        <td>the pre tag defines preformatted text</td>
-    </tr>
-    <tr>
-        <td><code>&lt;img&gt;</code></td>
-        <td>the img tag defines style an image</td>
-    </tr>
-    <tr>
-        <td><code>&lt;video&gt;</code></td>
-        <td>The video tag defines embedded video content</td>
-    </tr>
-    <tr>
-        <td><code>&lt;audio&gt;</code></td>
-        <td>The audio tag defines embedded sound content</td>
-    </tr>
-    <tr>
-        <td><code>&lt;a&gt;</code></td>
-        <td>the a tag defines a hyperlink</td>
-    </tr>
-    <tr>
-        <td><code>&lt;br&gt;</code></td>
-        <td>The br tag defines a single line break</td>
-    </tr>
-    <tr>
-        <td><code>&lt;button&gt;</code></td>
-        <td>The button tag defines a clickable button</td>
-    </tr>
-    <tr>
-        <td><code>&lt;nav&gt;</code></td>
-        <td>the nav tag defines navigation links</td>
-    </tr>
-    <tr>
-        <td><code>&lt;form&gt;</code></td>
-        <td>The form tag defines an HTML form for user input</td>
-    </tr>
-    <tr>
-        <td><code>&lt;input&gt;</code></td>
-        <td>The input tag defines an input control</td>
-    </tr>
-    <tr>
-        <td><code>&lt;label&gt;</code></td>
-        <td>the label tag defines a label for an &lt;input&gt; element</td>
-    </tr>
-    <tr>
-        <td><code>&lt;div&gt;</code></td>
-        <td>The div tag defines a section in a document</td>
-    </tr>
-    <tr>
-        <td><code>&lt;table&gt;</code></td>
-        <td>The table tag defines a table</td>
-    </tr>
-</table>
+<div class="divstyle">
+    <a name="CSS"><h1 class="title">Cascading Stylesheet (CSS)</h1></a>
+    <p>
+    HTML (HyperText Markup Language) is the standard markup language used to structure and design web pages.
+    It defines how text, images, and multimedia content are displayed in a web browser.
+    </p>
 
-<table class="table">
-    <tr>
-        <th colspan="2" class="header">Cascading Stylesheet (CSS)</th>
-    </tr>
-    <tr>
-        <td><b>Property</b></td>
-        <td><b>Description</b></td>
-    </tr>
-    <tr>
-        <td><code>/*...*/</code></td>
-        <td>This defines a comment</td>
-    </tr>
-    <tr>
-        <td><code>color</code></td>
-        <td>The color property sets the color of text</td>
-    </tr>
-    <tr>
-        <td><code>background-color</code></td>
-        <td>The background-color property specifies the background color of an element</td>
-    </tr>
-    <tr>
-        <td><code>background-image</code></td>
-        <td>The background-image property specifies one or more background images for an element</td>
-    </tr>
-    <tr>
-        <td><code>background-attachment</code></td>
-        <td>The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed</td>
-    </tr>
-    <tr>
-        <td><code>border</code></td>
-        <td>The border property is a shorthand property for border-width, border-style and border-color</td>
-    </tr>
-    <tr>
-        <td><code>font-size</code></td>
-        <td>The font-size property specifies the font size of text</td>
-    </tr>
-    <tr>
-        <td><code>font-family</code></td>
-        <td>The font-family property specifies the font family for text</td>
-    </tr>
-    <tr>
-        <td><code>margin</code></td>
-        <td>The margin property sets all the margin properties in one declaration</td>
-    </tr>
-    <tr>
-        <td><code>padding</code></td>
-        <td>The padding property is a shorthand property for all the padding-* properties</td>
-    </tr>
-    <tr>
-        <td><code>position</code></td>
-        <td>The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed)</td>
-    </tr>
-    <tr>
-        <td><code>display</code></td>
-        <td>The display property specifies how a certain HTML element should be displayed</td>
-    </tr>
-    <tr>
-        <td><code>text-decoration</code></td>
-        <td>The test-decoration property specifies the decoration added to text</td>
-    </tr>
-    <tr>
-        <td><code>border-radius</code></td>
-        <td>The border-radius property is a shorthand property for the four border-*-radius properties</td>
-    </tr>
-    <tr>
-        <td><code>text-align</code></td>
-        <td>The display property specifies how a certain HTML element should be displayed</td>
-    </tr>
-    <tr>
-        <td><code>float</code></td>
-        <td>The test-decoration property specifies the decoration added to text</td>
-    </tr>
-    <tr>
-        <td><code>border-spacing</code></td>
-        <td>The border-spacing property sets the distance between the borders of adjacent cells</td>
-    </tr>
-    <tr>
-        <td><code>line-height</code></td>
-        <td>The line-height property sets the line height</td>
-    </tr>
-    <tr>
-        <td><code>flex</code></td>
-        <td>The flex property is a shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
-    </tr>
-    <tr>
-        <td><code>@font-face</code></td>
-        <td>The border-radius property specifies a custom font to use to display text</td>
-    </tr>
-
-</table>
+    <table class="table">
+        <tr>
+            <th>Property</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>/*...*/</code></td>
+            <td>This defines a comment</td>
+        </tr>
+        <tr>
+            <td><code>color</code></td>
+            <td>The color property sets the color of text</td>
+        </tr>
+        <tr>
+            <td><code>background-color</code></td>
+            <td>The background-color property specifies the background color of an element</td>
+        </tr>
+        <tr>
+            <td><code>background-image</code></td>
+            <td>The background-image property specifies one or more background images for an element</td>
+        </tr>
+        <tr>
+            <td><code>background-attachment</code></td>
+            <td>The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed</td>
+        </tr>
+        <tr>
+            <td><code>border</code></td>
+            <td>The border property is a shorthand property for border-width, border-style and border-color</td>
+        </tr>
+        <tr>
+            <td><code>font-size</code></td>
+            <td>The font-size property specifies the font size of text</td>
+        </tr>
+        <tr>
+            <td><code>font-family</code></td>
+            <td>The font-family property specifies the font family for text</td>
+        </tr>
+        <tr>
+            <td><code>margin</code></td>
+            <td>The margin property sets all the margin properties in one declaration</td>
+        </tr>
+        <tr>
+            <td><code>padding</code></td>
+            <td>The padding property is a shorthand property for all the padding-* properties</td>
+        </tr>
+        <tr>
+            <td><code>position</code></td>
+            <td>The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed)</td>
+        </tr>
+        <tr>
+            <td><code>display</code></td>
+            <td>The display property specifies how a certain HTML element should be displayed</td>
+        </tr>
+        <tr>
+            <td><code>text-decoration</code></td>
+            <td>The test-decoration property specifies the decoration added to text</td>
+        </tr>
+        <tr>
+            <td><code>border-radius</code></td>
+            <td>The border-radius property is a shorthand property for the four border-*-radius properties</td>
+        </tr>
+        <tr>
+            <td><code>text-align</code></td>
+            <td>The display property specifies how a certain HTML element should be displayed</td>
+        </tr>
+        <tr>
+            <td><code>float</code></td>
+            <td>The test-decoration property specifies the decoration added to text</td>
+        </tr>
+        <tr>
+            <td><code>border-spacing</code></td>
+            <td>The border-spacing property sets the distance between the borders of adjacent cells</td>
+        </tr>
+        <tr>
+            <td><code>line-height</code></td>
+            <td>The line-height property sets the line height</td>
+        </tr>
+        <tr>
+            <td><code>flex</code></td>
+            <td>The flex property is a shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
+        </tr>
+        <tr>
+            <td><code>@font-face</code></td>
+            <td>The border-radius property specifies a custom font to use to display text</td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>
