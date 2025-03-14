@@ -11,15 +11,23 @@ Make sure the code is indented and spaced properly. */
 
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.row {
-    margin-left:-5px;
-    margin-right:-5px;
+body {
+    background-color: #a5b2ab;
 }
 
-.column {
-    float: left;
+#title {
+    color: #dee8df;
+    text-align: center;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 50%;
     padding: 5px;
 }
@@ -29,8 +37,14 @@ table {
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
+    background-color: #f3efe4;
+    color: #244c43;
 }
-      
+
+code {
+    font-family: monospace;
+}
+
 th, td {
     text-align: left;
     padding: 15px;
@@ -49,5 +63,5 @@ tr {
 }
 
 .header {
-    background-color: pink;
+    background-color: #d6ccc2;
 }
