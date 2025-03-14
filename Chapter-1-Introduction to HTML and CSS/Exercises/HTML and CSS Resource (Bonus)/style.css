@@ -15,7 +15,11 @@ Make sure the code is indented and spaced properly. */
 }
 
 body {
-    background-color: #a5b2ab;
+    background-image: url('https://i.pinimg.com/1200x/7e/38/95/7e38952faa3c2f94bc41d24cf1d2b85e.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: rgb(129, 157, 119);
+    top: -8px;
     margin: 0;
     padding: 0;
 }
@@ -71,13 +75,28 @@ header {
     display: inline;
 }
 
+#maintitle {
+    font-size: 50px; 
+    font-family: monospace;
+    padding: 0px; 
+    margin-top: 15%;
+    margin-bottom: 20%;
+    color: #3c6c4f;
+    text-align: center;
+    text-shadow: 10px 4px 4px #cccbcb;
+}
+
+#maintitle b {
+    font-family: monospace;
+}
+
 .title {
     color: #244c43;
     text-align: center;
 }
 
 .divstyle {
-    border-radius: 20px;
+    border: 20px solid #a29b94;
     background-color: #d6ccc2;
     margin: 2% 15% 2% 15%;
     padding: 10px;
