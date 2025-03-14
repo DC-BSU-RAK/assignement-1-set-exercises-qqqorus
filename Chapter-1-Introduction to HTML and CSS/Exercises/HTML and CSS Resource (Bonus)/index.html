@@ -19,6 +19,7 @@ Make sure the code is indented and spaced properly. -->
 </head>
 
 <body>
+    <a name="TOP"></a>
 
 <header>
     <nav>
@@ -45,6 +46,8 @@ Make sure the code is indented and spaced properly. -->
             <li>HTML is the foundation of web development, making websites accessible and organized.</li>
         </ul>
         
+        <br>
+
         <h3>HTML Components</h3>
     </article>
     
@@ -206,10 +209,146 @@ Make sure the code is indented and spaced properly. -->
 
 <div class="divstyle">
     <a name="CSS"><h1 class="title">Cascading Stylesheet (CSS)</h1></a>
-    <p>
-    HTML (HyperText Markup Language) is the standard markup language used to structure and design web pages.
-    It defines how text, images, and multimedia content are displayed in a web browser.
-    </p>
+    <article>
+        <p>&emsp;CSS, which stands for Cascading Style Sheets is a language in web development that enhances the presentation of HTML elements. 
+        By applying styles like color, layout, and spacing, CSS makes web pages visually appealing and responsive to various screen sizes.</p>
+
+        <p>&emsp;CSS allows you to control the look and feel of websites, enabling design consistency across different devices. 
+        It also helps optimize performance through reusable stylesheets and allows customization of default browser styles.</p>
+        
+        <p>&emsp;When you declare multiple styles for the same element (e.g., from an external stylesheet, inline styling, or browser defaults), 
+        the cascade helps ensure the correct styles are applied based on the following order of precedence:</p>
+        <ol>
+            <li><b>Inline Styles</b> (Highest Priority)</li>
+            <li><b>Internal and External Styles</b> (Next Priority)</li>
+            <li><b>Browser Defaults</b> (Lowest Priority)</li>
+        </ol>
+        
+        <br>
+
+        <h3>CSS Integration Techniques</h3>
+        <p>There are several ways to include CSS in an HTML file. 
+            Each technique has its own use case, and choosing the right one depends on the project requirements.</p>
+    </article>
+
+    <table class="table">
+        <tr>
+            <th>Techniques</th>
+            <th>Description</th>
+            <th id="syntax">Syntax</th>
+        </tr>
+        <tr>
+            <td>Internal CSS</td>
+            <td>Internal CSS is written directly within the &lt;style&gt; element inside the &lt;head&gt; section of an HTML document.</td>
+            <td><code>&lt;style&gt;<br>
+                h1 {<br>
+                    &emsp;color: crimson;<br>
+                }<br>
+                &lt;/style&gt;</code></td>
+        </tr>
+        <tr>
+            <td>External CSS</td>
+            <td>External CSS uses a separate .css file, linked to the HTML document. 
+                This is ideal for maintaining large projects with multiple pages.</td>
+            <td><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></td>
+        </tr>
+        <tr>
+            <td>Inline CSS</td>
+            <td>Inline CSS applies styles directly to specific HTML elements using the style attribute. 
+                While convenient, it is not recommended for large-scale projects due to maintainability concerns.</td>
+            <td><code>&lt;p style="color:green;"&gt;
+                HTML & CSS Resource
+                &lt;/p&gt;</code></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <article>
+        <h3>How to Style Elements in CSS?</h3>
+        <p>&emsp;CSS uses selectors to target HTML elements for styling.
+        <b>Selectors</b> allow you to apply styles based on element types, IDs, classes, attributes, and more.</p>
+
+        <h3>CSS Selectors</h3>
+        <p>&emsp;A CSS selector selects the HTML element(s) for styling purposes. 
+        CSS selectors select HTML elements according to their id, class, type, attribute, etc. 
+        The HTML Elements can be styled either as a single or grouped with the help of the following CSS Selectors, 
+        depending on the styled-type used:</p>
+    </article>
+
+    <table class="table">
+        <tr>
+            <th>Selectors</th>
+            <th>Description</th>
+            <th id="syntax">Syntax</th>
+        </tr>
+        <tr>
+            <td>Element Selector</td>
+            <td>This selector targets all elements of a specific type.</td>
+            <td><code>p {<br>
+                    &emsp;color: blue;<br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>ID Selector</td>
+            <td>The id selector applies styles to elements with a specific id attribute. IDs must be unique within a page.</td>
+            <td><code>#header {<br>
+                    &emsp;background-color: lightgray;<br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>Class Selector</td>
+            <td>This selector targets all elements that belong to a particular class.</td>
+            <td><code>.box {<br>
+                    &emsp;border: 1px solid black;<br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>Universal (*) Selector</td>
+            <td>The universal selector applies styles to all elements in an HTML document. </td>
+            <td><code>* {<br>
+                    &emsp;margin: 0;<br>
+                    &emsp;padding: 0; <br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>Attribute Selector</td>
+            <td>This selector targets elements based on attribute values.</td>
+            <td><code>input[type="text"] {<br>
+                    &emsp;border: 1px solid gray;<br>
+                }<br></code></td>
+        </tr>
+        <tr>
+            <td>Pseudo-classes Selector</td>
+            <td>Pseudo-classes define a special state of an element, such as when it is hovered or focused.</td>
+            <td><code>a:hover {<br>
+                    &emsp;color: red;<br>
+                }</code></td>
+        </tr>
+        <tr>
+            <td>Pseudo Elements Selector</td>
+            <td>Pseudo-elements style specific parts of an element, such as the first letter or first line.</td>
+            <td><code>p::first-letter {<br>
+                    &emsp;font-size: 2em;<br>
+                }</code></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <article>
+        <h3>CSS Properties</h3>
+        <p>&emsp;CSS Property are used to style HTML elements. Each property consists of two parts:</p>
+        <ul>
+            <li><b>Property name:</b> The CSS feature being styled.</li>
+            <li><b>Property value:</b> The settings applied to that feature.</li>
+        </ul>
+        
+        <p>&emsp;<b>Syntax:</b><br>
+        &emsp;&emsp;<code>property: value;</code></p>
+        
+        <p>Below are some popular <b>CSS Properties:</b></p>
+    </article>
 
     <table class="table">
         <tr>
@@ -298,6 +437,19 @@ Make sure the code is indented and spaced properly. -->
         </tr>
     </table>
 </div>
+
+<section>
+    <a href="#TOP" id="top">BACK TO TOP</a>
+</section>
+
+<footer>
+    <nav>
+        <a href="https://www.facebook.com/" class="navfooter" id="fb" target="_blank">&emsp13; Facebook</a> <!-- Link to Facebook that will open in a new tab -->
+        <a href="https://github.com/qqqorus" class="navfooter" id="gh" target="_blank">GitHub</a> <!-- Link to Instagram that will open in a new tab -->
+        <a href="https://www.linkedin.com/in/quishia-desiree-famador-643480330/" class="navfooter" id="linked" target="_blank">LinkedIn</a> <!-- Link to Twitter that will open in a new tab -->
+        <p id="tm">Quishia Codes&trade;</p>
+    </nav>
+</footer>
 
 </body>
 </html>
