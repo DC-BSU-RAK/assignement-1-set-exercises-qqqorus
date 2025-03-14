@@ -63,6 +63,13 @@ header {
     border-radius: 10px; /* Rounds the corners of the search bar input area */
 }
 
+#form {
+    float: right;
+    padding: 0px; 
+    margin: 0px;
+    display: inline;
+}
+
 /* Sets the style for the tag with the id 'submit1' which is the first submit button in the header */
 #submit1 {
     border-radius: 5px;

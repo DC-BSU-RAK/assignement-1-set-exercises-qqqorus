@@ -58,6 +58,13 @@ header {
     border-radius: 10px; /* Rounds the corners of the search bar input area */
 }
 
+#form {
+    float: right;
+    padding: 0px; 
+    margin: 0px;
+    display: inline;
+}
+
 #title {
     color: #dee8df;
     text-align: center;
