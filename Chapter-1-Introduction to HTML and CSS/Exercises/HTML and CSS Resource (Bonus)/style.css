@@ -16,6 +16,46 @@ Make sure the code is indented and spaced properly. */
 
 body {
     background-color: #a5b2ab;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d6ccc2;
+    color: #244c43;
+    text-decoration: none; /* Makes sure that there is no text-decoration especially for links with underlines */
+    position: relative;
+    margin: 0;
+    padding: 2%;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    display: inline-block; /* Displays the elements in the header in the same line and not in another line */
+}
+
+#headername {
+    display: inline-block; /* Makes sure the elements are in the same line as the other elements in the header */
+    font-size: 25px; 
+    padding: 0px; 
+    margin: 0px;
+    color: #244c43;
+    margin-right: 50px;
+}
+
+.navheader {
+    font-size: 18px;
+    color: #244c43;
+    text-decoration: none; /* Removes the underlines from the links */
+    display: inline-block; /* Displays all the elements in the same line */
+    margin-right: 20px;
+}
+
+#searchbar {
+    font-size: 14px;
+    padding: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 10px; /* Rounds the corners of the search bar input area */
 }
 
 #title {
