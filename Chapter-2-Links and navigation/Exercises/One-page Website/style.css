@@ -1,6 +1,7 @@
 * {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,8 +19,10 @@ header {
     padding: 3%;
     text-decoration: none; /* Makes sure that there is no text-decoration especially for links with underlines */
     position: relative;
-    top: -8px;
-    display: inline-block; /* Displays the elements in the header in the same line and not in another line */
+    margin: 0;
+    padding: 2%;
+    top: 0px;
+    left: 0;
     width: 100%;
 }
 
@@ -44,12 +47,17 @@ a {
     display: inline-block; /* Makes sure the elements are in the same line as the other elements in the header */
     padding: 0px; 
     margin: 0px;
-    margin-right: 100px;
     margin-left: 50px;
 }
 
 .navheader:hover {
     color: #3f552c;
+}
+
+#links {
+    display: inline;
+    float: right;
+    margin-right: 50px;
 }
 
 #pagename {
