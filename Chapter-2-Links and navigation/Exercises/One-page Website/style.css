@@ -1,5 +1,6 @@
 * {
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,7 +15,9 @@ header {
     display: inline-block;
     padding: 2%;
     color: white;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
+    top: 0;
+    z-index: 1;
 }
 
 a {
@@ -30,23 +33,46 @@ a {
     margin-left: 50px;
 }
 
-#container {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    margin: 5%;
-    bottom: 0;
-    left: 0;
-    background-color: ;
+.navheader:hover {
+    color: green;
 }
 
-/* body {
-    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-4k-e2-1920x1080.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-} */
+.title {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1px;
+}
 
-/* 
-body {
-    /* background-image: url('https://images.hdqwalls.com/wallpapers/wicked-movie-nr.jpg'); */
-    /* background-image: url('https://images.hdqwalls.com/download/glinda-and-elphaba-in-wicked-movie-2024-g8-1920x1080.jpg'); */
+#maindiv {
+    margin-left: 5%;
+    z-index: 0;
+    padding: 10px;
+    left: 0;
+    position: relative;
+}
+
+#maincontent {
+    width: 450px;
+    background-color: rgba(20, 11, 20, 0.2);
+    z-index: 0;
+    padding: 10px;
+    border-radius: 30px;
+    left: 0;
+    float: left;
+}
+
+#gallery {
+    width: 300px;
+    background-color: rgba(20, 11, 20, 0.2);
+    z-index: 0;
+    padding-left: 15px;
+    border-radius: 30px;
+    right: 0;
+    float: right;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+}
