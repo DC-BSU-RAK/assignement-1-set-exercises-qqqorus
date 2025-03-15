@@ -9,15 +9,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-    display: inline-block;
-    padding: 2%;
-    color: white;
-    margin-bottom: 10px;
-    top: 0;
-    z-index: 1;
+    color: #f8edd6;
+    padding: 3%;
+    text-decoration: none; /* Makes sure that there is no text-decoration especially for links with underlines */
+    position: relative;
+    top: -8px;
+    display: inline-block; /* Displays the elements in the header in the same line and not in another line */
+    width: 100%;
 }
 
 a {
@@ -26,15 +29,31 @@ a {
 }
 
 .navheader {
-    display: inline-block;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     text-decoration: none;
+    margin-left: 50px;
+    text-decoration: none; /* Removes the underlines from the links */
+    display: inline-block; /* Displays all the elements in the same line */
+}
+
+.navheader1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block; /* Makes sure the elements are in the same line as the other elements in the header */
+    padding: 0px; 
+    margin: 0px;
+    margin-right: 100px;
     margin-left: 50px;
 }
 
 .navheader:hover {
     color: #3f552c;
+}
+
+#pagename {
+    margin-right: 10px;
 }
 
 .title {
@@ -45,6 +64,7 @@ a {
 
 #maindiv {
     margin-left: 5%;
+    margin-right: 5%;
     z-index: 0;
     padding: 10px;
     left: 0;
@@ -99,6 +119,7 @@ img {
 
 .review b {
     font-size: 14px;
+    text-align: right;
 }
 
 .trivia {
