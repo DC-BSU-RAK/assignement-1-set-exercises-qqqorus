@@ -1,0 +1,52 @@
+* {
+    color: white;
+}
+
+body {
+    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-screen-x-poster-xz-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    display: inline-block;
+    padding: 2%;
+    color: white;
+    margin-bottom: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navheader {
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+#container {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    margin: 5%;
+    bottom: 0;
+    left: 0;
+    background-color: ;
+}
+
+/* body {
+    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-4k-e2-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+/* 
+body {
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/wicked-movie-nr.jpg'); */
+    /* background-image: url('https://images.hdqwalls.com/download/glinda-and-elphaba-in-wicked-movie-2024-g8-1920x1080.jpg'); */
