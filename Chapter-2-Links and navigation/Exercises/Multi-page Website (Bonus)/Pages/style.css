@@ -57,10 +57,11 @@ a {
 .chosennav {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    text-decoration: underline 2px white;
+    text-decoration: underline 7px #3f552c;
     margin-left: 50px;
-    text-decoration: none; /* Removes the underlines from the links */
     display: inline-block;
+    color: white;
+    font-weight: bold;
 }
 
 #links {
