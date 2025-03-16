@@ -7,15 +7,15 @@
 
 #maincontent {
     margin-top: 4%;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-right: 10%;
     margin-bottom: 4%;
-    /* border: 2px solid #84592c; */
 }
 
 .images {
     display: inline-block;
     margin: 10px;
+
 }
 
 img {
