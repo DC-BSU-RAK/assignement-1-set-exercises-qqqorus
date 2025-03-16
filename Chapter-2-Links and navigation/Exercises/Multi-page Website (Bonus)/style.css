@@ -1,0 +1,146 @@
+* {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-screen-x-poster-xz-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    color: #f8edd6;
+    padding: 3%;
+    text-decoration: none; /* Makes sure that there is no text-decoration especially for links with underlines */
+    position: relative;
+    margin: 0;
+    padding: 2%;
+    top: 0px;
+    left: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navheader {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 50px;
+    text-decoration: none; /* Removes the underlines from the links */
+    display: inline-block; /* Displays all the elements in the same line */
+}
+
+.navheader1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block; /* Makes sure the elements are in the same line as the other elements in the header */
+    padding: 0px; 
+    margin: 0px;
+    margin-left: 50px;
+}
+
+.navheader:hover {
+    color: #3f552c;
+}
+
+#links {
+    display: inline;
+    float: right;
+    margin-right: 50px;
+}
+
+#pagename {
+    margin-right: 10px;
+}
+
+.title {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 1px;
+}
+
+#maindiv {
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 0;
+    padding: 10px;
+    left: 0;
+    position: relative;
+}
+
+#maincontent {
+    width: 450px;
+    z-index: 0;
+    padding: 10px;
+    border-radius: 30px;
+    left: 0;
+    float: left;
+    text-shadow: 1px 1px 2px black;
+}
+
+#gallery {
+    width: 300px;
+    background-color: rgba(20, 11, 20, 0.2);
+    z-index: 0;
+    padding-left: 15px;
+    border-radius: 30px;
+    right: 0;
+    float: right;
+}
+
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 150px;
+}
+
+#reviewtrivia {
+    width: 450px;
+    /* background-color: rgba(20, 11, 20, 0.2); */
+    z-index: 0;
+    padding: 10px;
+    border-radius: 30px;
+    right: 0;
+    float: right;
+    text-align: right;
+    text-shadow: 1px 1px 2px black;
+}
+
+.review {
+    color: white;
+    font-size: 12px;
+    background-color: rgba(91, 96, 19, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.review b {
+    font-size: 14px;
+    text-align: right;
+}
+
+.trivia {
+    color: white;
+    font-size: 12px;
+    background-color: rgba(221, 133, 136, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 5px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+}
