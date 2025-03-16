@@ -16,7 +16,7 @@ body {
 }
 
 #div1 {
-  border: 5px solid #7b33b9;
+  border: 5px solid #9354d1;
   box-shadow: 10px 10px 10px red;
 }
 
@@ -26,15 +26,15 @@ body {
 }
 
 #div3 {
-  border-radius: 10px;
-  border: 5px solid #da8535; 
-  outline: 5px solid red;
+  border-radius: 20px;
+  border: 5px solid #f68c16; 
+  outline: 10px solid #0001fd;
   box-shadow:
-    0 0 0 10px hsl(0, 87%, 6%),
-    0 0 0 15px hsl(0, 35%, 33%);
+    0 0 0 17px hsl(359, 100%, 49%),
+    0 0 0 25px hsl(120, 100%, 25%);
 }
 
 #div4 {
-  border: 5px solid #a04541;
+  border: 5px solid #a5252f;
   text-shadow: 10px 5px 1px black;
 }
