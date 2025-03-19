@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('https://images.hdqwalls.com/download/wicked-movie-2024-screen-x-poster-xz-1920x1080.jpg');
+    background-image: url('https://images.hdqwalls.com/download/glinda-and-elphaba-in-wicked-movie-2024-g8-1920x1080.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -67,6 +67,7 @@ a {
     display: inline;
     float: right;
     margin-right: 50px;
+    font-weight: 500;
 }
 
 #pagename {
@@ -74,7 +75,7 @@ a {
 }
 
 .title {
-    display: inline-block;
+    display: inline;
     margin-right: 10px;
     line-height: 1px;
 }
@@ -91,11 +92,34 @@ a {
 #maincontent {
     width: 450px;
     z-index: 0;
-    padding: 10px;
+    padding: 40px 40px 40px 40px;
     border-radius: 30px;
-    left: 0;
+    left: 5%;
     float: left;
+    bottom: 5%;
     text-shadow: 1px 1px 2px black;
+    position: fixed;
+    background-color: rgba(20, 11, 20, 0.2);
+    text-align: justify;
+}
+
+hr {
+    border: 5px solid ;
+    border-color: #3f552c;
+    margin-top: 15px;
+    float: left;
+    width: 30%;
+}
+
+#star {
+    color: orange;
+    font-size: 20px;
+}
+
+.color {
+    color: #3f552c;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #3f552c;
 }
 
 #gallery {
@@ -112,44 +136,4 @@ img {
     margin-left: 10px;
     margin-right: 10px;
     height: 150px;
-}
-
-#reviewtrivia {
-    width: 450px;
-    /* background-color: rgba(20, 11, 20, 0.2); */
-    z-index: 0;
-    padding: 10px;
-    border-radius: 30px;
-    right: 0;
-    float: right;
-    text-align: right;
-    text-shadow: 1px 1px 2px black;
-}
-
-.review {
-    color: white;
-    font-size: 12px;
-    background-color: rgba(91, 96, 19, 0.5);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 5px;
-    text-align: justify;
-    text-shadow: 1px 1px 2px black;
-    
-}
-
-.review b {
-    font-size: 14px;
-    text-align: right;
-}
-
-.trivia {
-    color: white;
-    font-size: 12px;
-    background-color: rgba(221, 133, 136, 0.5);
-    border-radius: 20px;
-    padding: 20px;
-    margin: 5px;
-    text-align: justify;
-    text-shadow: 1px 1px 2px black;
 }
