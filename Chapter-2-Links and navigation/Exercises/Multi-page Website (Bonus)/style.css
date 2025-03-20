@@ -74,38 +74,52 @@ a {
     margin-right: 10px;
 }
 
-.title {
-    display: inline;
+#title {
     margin-right: 10px;
-    line-height: 1px;
+    line-height: 20px;
+    font-size: 40px;
+}
+
+#details {
+    margin-right: 10px;
+    line-height: 20px;
+}
+
+.imdb {
+    height: 23px;
+    width: 50px;
+    vertical-align: text-top;
 }
 
 #maindiv {
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 90%;
+    height: 70%;
     z-index: 0;
-    padding: 10px;
-    left: 0;
-    position: relative;
+    padding: 40px;
+    left: 5%;
+    bottom: 5%;
+    position: fixed;
+    background-color: rgba(22, 29, 16, 0.9);
+    text-align: justify;
 }
 
 #maincontent {
-    width: 450px;
-    z-index: 0;
-    padding: 40px 40px 40px 40px;
-    border-radius: 30px;
-    left: 5%;
-    float: left;
-    bottom: 5%;
-    text-shadow: 1px 1px 2px black;
-    position: fixed;
-    background-color: rgba(20, 11, 20, 0.2);
     text-align: justify;
+    text-shadow: 1px 1px 2px black;
+    z-index: 10;
+    margin: 3% 3% 5% 33%;
+}
+
+#poster {
+    position: absolute;
+    z-index: 10;
+    bottom: 10%;
+    left: 5%;
 }
 
 hr {
     border: 5px solid ;
-    border-color: #3f552c;
+    border-color: rgb(63, 85, 44);
     margin-top: 15px;
     float: left;
     width: 30%;
@@ -126,14 +140,14 @@ hr {
     width: 300px;
     background-color: rgba(20, 11, 20, 0.2);
     z-index: 0;
-    padding-left: 15px;
+    padding: 15px;
     border-radius: 30px;
-    right: 0;
+    right: 5%;
     float: right;
 }
 
 img {
     margin-left: 10px;
     margin-right: 10px;
-    height: 150px;
+    width: 300px;
 }
