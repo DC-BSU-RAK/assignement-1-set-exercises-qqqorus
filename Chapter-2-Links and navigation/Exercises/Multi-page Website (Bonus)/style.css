@@ -130,6 +130,14 @@ a {
     font-size: 20px;
 }
 
+#link {
+    color: #558055;
+}
+
+#link:hover {
+    text-decoration: underline;
+}
+
 .trailer {
     background: linear-gradient(to right, #5b6013 0%, #3f552c 100%);
     color: #fff;
