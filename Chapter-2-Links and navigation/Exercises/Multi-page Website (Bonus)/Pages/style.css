@@ -152,6 +152,15 @@ div.scroll-container img {
     margin: 5px;
 }
 
+.count {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.count:hover {
+    text-decoration: underline;
+}
+
 div.cast i {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -166,6 +175,36 @@ div.cast {
     overflow: auto;
     white-space: nowrap;
     scrollbar-color: #3f552c rgba(0, 0, 0, 0.1);
+}
+
+div.crew i {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+div.crew section {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 15px 5px 5px;
+}
+
+div.crew {
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-color: #3f552c rgba(0, 0, 0, 0.1);
+}
+
+.more {
+    margin: 10px;
+    background-color: rgba(63, 85, 44, 0.4);
+    border-radius: 90px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.more:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #253119;
+    text-shadow: none;
 }
 
 @font-face {
