@@ -104,6 +104,14 @@ a {
     border-radius: 20px;
 }
 
+#maincontenttrivia {
+    text-align: justify;
+    background-color: rgba(22, 29, 16, 0.9);
+    z-index: 10;
+    padding: 4%;
+    border-radius: 20px;
+}
+
 table {
     width: 100%;
     font-size: 15px;
@@ -148,7 +156,7 @@ div.scroll-container img {
     clip-path: circle(50%);
     display: inline;
     vertical-align: middle;
-    margin: 5px;
+    margin: 10px 10px 20px;
 }
 
 .count {
@@ -215,6 +223,25 @@ div.crew section {
     margin: 0px 7px 0px;
     font-size: small;
     vertical-align: top;
+}
+
+.trivia {
+    text-align: justify;
+    background-color: rgba(63, 85, 44, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px 10px 10px;
+    font-size: medium;
+    vertical-align: top;
+}
+
+#more {
+    float: right;
+    margin: 0px 10px 0px;
+}
+
+#more:hover {
+    text-decoration: underline;
 }
 
 h3 {
