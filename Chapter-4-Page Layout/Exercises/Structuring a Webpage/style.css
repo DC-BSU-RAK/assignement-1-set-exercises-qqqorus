@@ -14,6 +14,7 @@ header {
     line-height: 10px;
     padding: 20px;
     vertical-align: middle;
+    top: 0;
 }
 
 header h1 {
@@ -31,11 +32,32 @@ main {
     margin: 3%;
 }
 
+main img {
+    width: 810px;
+    height: 250px;
+}
+
 aside {
     background-color: #172d66;
     color: #fff;
-    width: 400px;
+    width: 450px;
     float: right;
     margin-left: 2%;
     padding: 5px 20px 5px;
+}
+
+aside img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+footer {
+    background-color: #8d15e9;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    bottom: 0;
 }
