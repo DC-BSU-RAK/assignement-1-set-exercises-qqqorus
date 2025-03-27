@@ -1,5 +1,5 @@
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -17,20 +17,21 @@ header {
     top: 0;
 }
 
-header h1 {
-    text-decoration: underline;
+u {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 table {
     width: 100%;
     border-spacing: 10px;
+    font-size: 18px;
 }
 
 #welcome {
@@ -40,7 +41,7 @@ table {
 
 #welcome img {
     width: 100%;
-    height: 285px;
+    height: 267px;
 }
 
 #lineup {
@@ -62,7 +63,6 @@ footer {
     background-color: #8d15e9;
     color: #fff;
     text-align: center;
-    font-size: 14px;
     padding: 5px;
     bottom: 0;
 }
