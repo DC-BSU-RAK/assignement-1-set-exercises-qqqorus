@@ -1,0 +1,32 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #17072b;
+    text-align: center;
+    color: #fff;
+    line-height: 10px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+header h1 {
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: 3%;
+}
