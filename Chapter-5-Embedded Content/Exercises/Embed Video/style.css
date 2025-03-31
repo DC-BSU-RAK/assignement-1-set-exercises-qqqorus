@@ -1,8 +1,13 @@
 body {
-    background-color: maroon;
+    background: url('https://i.pinimg.com/1200x/52/19/46/521946c41e429164bb6915e4a4295fde.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 #videocontainer {
-    text-align: center;
-    vertical-align: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
