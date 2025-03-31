@@ -1,7 +1,7 @@
 body {
-    background: url('https://i.pinimg.com/1200x/52/19/46/521946c41e429164bb6915e4a4295fde.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
+    color: #fff;
+    position: center;
     margin: 0;
     padding: 0;
 }
@@ -10,4 +10,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 100px;
+}
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0px;
+}
+
+h2 {
+    line-height: 0px;
+}
+
+video { 
+    margin: 10px;
 }
