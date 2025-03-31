@@ -18,7 +18,7 @@ header {
 }
 
 u {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
 }
 
 nav a {
@@ -51,9 +51,13 @@ main {
     height: 310px;
 }
 
+section img {
+    margin: 20px 0px 0px 0px;
+}
+
 #lineup {
     width: 33%;
-    background-color: #172d66;
+    background-color: #172d67;
     color: #fff;
     padding: 20px;
     vertical-align: top;
@@ -69,7 +73,7 @@ main {
 }
 
 footer {
-    background-color: #8d15e9;
+    background-color: #8c15e9;
     color: #fff;
     text-align: center;
     padding: 5px;
