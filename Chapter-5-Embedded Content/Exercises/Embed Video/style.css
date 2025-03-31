@@ -1,7 +1,8 @@
 body {
-    background-color: black;
+    background: url('images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    position: center;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px;
+    bottom: 0;
+    margin: 10px 0px 50px 0px;
+}
+
+#textcontainer {
+    text-align: center;
+    margin-top: 150px;
 }
 
 h1 {
