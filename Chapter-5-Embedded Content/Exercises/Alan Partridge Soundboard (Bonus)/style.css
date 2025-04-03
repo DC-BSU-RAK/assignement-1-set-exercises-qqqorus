@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: rgb(171, 32, 29);
+    background: radial-gradient(rgb(231, 46, 44), rgb(159, 27, 24), rgb(144, 22, 18));
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 aside {
@@ -13,13 +17,15 @@ aside {
 }
 
 table {
-    border-spacing: 30px;
+    border-spacing: 10px;
 }
 
 table, td {
     border: 3px solid gold;
 }
 
-td {
+button {
     padding: 20px;
+    width: 200px;
+    font-weight: bold;
 }
