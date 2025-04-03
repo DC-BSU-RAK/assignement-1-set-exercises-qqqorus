@@ -1,0 +1,25 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(227, 192, 76);
+}
+
+body {
+    background-color: rgb(171, 32, 29);
+}
+
+aside {
+    float: right;
+    top: 0;
+}
+
+table {
+    border-spacing: 30px;
+}
+
+table, td {
+    border: 3px solid gold;
+}
+
+td {
+    padding: 20px;
+}
