@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #9d9b71;
+    background-color: #f3efe6;
 }
 
 header {
@@ -83,8 +83,12 @@ h1 {
     margin: 2%;
 }
 
+#timetable {
+    margin: 2%;
+    padding: 0;
+}
+
 table {
-    margin: 1%;
     border-collapse: collapse;
     font-size: 12px;
     width: 100%;
@@ -98,13 +102,13 @@ table {
         border: 2px solid #e7c7d4;
         padding: 7px;
         text-align: center;
-        background-color: #f3efe6;
+        background-color: #fff;
     }
 
     th {
         color: #fff;
         background-color: #e7c7d4;
-        border: 2px solid #f3efe6;
+        border: 2px solid #fff;
     }
 }
 
