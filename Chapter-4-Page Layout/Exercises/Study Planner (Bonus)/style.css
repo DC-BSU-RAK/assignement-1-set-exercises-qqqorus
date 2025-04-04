@@ -6,6 +6,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f3efe6;
 }
 
 header {
@@ -55,28 +56,54 @@ h1 {
 .column {
     float: left;
     width: 30%;
-    height: 300px; /* Should be removed. Only for demonstration */
     border: 1px solid;
 }
 
 #column1 {
     float: left;
     width: 25%;
-    height: 300px; /* Should be removed. Only for demonstration */
     border: 1px solid;
 }
 
 #column2 {
     float: left;
     width: 45%;
-    height: 300px; /* Should be removed. Only for demonstration */
     border: 1px solid;
 }
 
 #column3 {
     float: left;
     width: 25%;
-    height: 300px; /* Should be removed. Only for demonstration */
     border: 1px solid;
+}
+
+#todo {
+    border: 1px solid black;
+    margin: 2%;
+}
+
+#mininav {
+    border: 1px solid black;
+    margin: 2%;
+}
+
+#timetable {
+    border: 1px solid black;
+    margin: 1%;
+}
+
+#notes {
+    border: 1px solid black;
+    margin: 1%;
+}
+
+#calendar {
+    border: 1px solid black;
+    margin: 2%;
+}
+
+#courses {
+    border: 1px solid black;
+    margin: 2%;
 }
 
