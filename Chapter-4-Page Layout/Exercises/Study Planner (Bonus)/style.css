@@ -1,0 +1,55 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 1%;
+}
+
+nav {
+    background-color: pink;
+    margin: 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 1%;
+}
+
+h1 {
+    background-color: black;
+    font-size: medium;
+    color: red;
+    padding: 1%;
+    text-align: center;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    column-gap: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    height: 300px; /* Should be removed. Only for demonstration */
+    border: 1px solid;
+}
+  
+/* Clear floats after the columns */
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
