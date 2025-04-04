@@ -111,7 +111,7 @@ h1 {
 #calendar h3 {
     margin: 0;
     padding: 3% 7%;
-    font-size: 18px;
+    font-size: 16px;
     background-color: white;
     color: #e7c7d4;
     text-align: center;
@@ -129,12 +129,12 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 900;
     color: #fff;
     
     &:nth-child(7) {
-      color: #9e8f92;
+      color: #9d9b71;
     }
 }
   
@@ -142,21 +142,30 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15px;
     color: #fff;
+    padding: 3px;
+    font-size: 15px;
   
     &:nth-child(7n) {
       color: #9d9b71;
       font-weight: 700;
     }
     
-    &--current,
-    &:hover {
-      background-color: #9e8f92;
+    &.chosen, &:hover {
+      background-color: #9d9b71;
       color: #fff !important;
       font-weight: 700;
       cursor: pointer;
+      border-radius: 7px;
     }
+}
+
+.blank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 3px;
 }
 
 #courses {
