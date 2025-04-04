@@ -88,6 +88,21 @@ h1 {
     margin: 1%;
 }
 
+table {
+    border-collapse: collapse;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 7px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+    
+}
+
 #notes {
     border: 1px solid black;
     margin: 1%;
