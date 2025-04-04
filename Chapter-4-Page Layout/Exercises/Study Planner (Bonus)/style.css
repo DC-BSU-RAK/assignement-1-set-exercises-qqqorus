@@ -140,10 +140,23 @@ h1 {
         color: #f3ecda;
     }
 
-    p {
+    article {
         color: #635a5c;
-        padding: 1% 4%;
+        padding: 3%;
         text-align: justify;
+        font-size: 15px;
+    }
+
+    #courses {
+        display: flex;
+        justify-content: space-evenly;
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        button {
+            text-align: center;
+        }
     }
 }
 
