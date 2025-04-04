@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f3efe6;
+    background-color: #f9f7f0;
 }
 
 header {
@@ -28,6 +28,7 @@ nav a {
 
     &:hover {
      color: #635a5c;
+     cursor: pointer;
     }
 }
 
@@ -100,14 +101,20 @@ h1 {
         cursor: pointer;
     }
 
-    p {
+    button {
         color: #635a5c74;
-        text-align: center;
-        font-size: 15px;
-        padding: 0;
-
+        display: block;
+        margin: auto;
+        font-size: 20px;
+        padding: 1% 3%;
+        background-color: #98965d4c;
+        border: 1px solid #98965d;
+        border-radius: 5px;
+        
         &:hover {
-            color: #635a5c;
+            color: #fff;
+            background-color: #98965d;
+            border: 1px solid #98965d;
             cursor: pointer;
         }
     }
@@ -137,7 +144,7 @@ h1 {
         margin: 0;
         padding: 3%;
         background-color: #c08c9cc4;
-        color: #f3ecda;
+        color: #fff;
     }
 
     article {
@@ -147,15 +154,34 @@ h1 {
         font-size: 15px;
     }
 
-    #courses {
+    section {
         display: flex;
         justify-content: space-evenly;
         border: none;
         margin: 0;
         padding: 0;
 
+        .courses {
+            /* border: 1px solid black; */
+            width: 200px;
+            padding: 1%;
+            margin: 1% 1% 3% 1%;
+
+            img {
+                display: block;
+                margin: auto;
+            }
+        }
+
         button {
-            text-align: center;
+            display: block;
+            margin: auto;
+            background-color: #e7c7d4;
+            color: #fff;
+            border: 1px solid #c08c9c;
+            border-radius: 5px;
+            padding: 2%;
+            font-size: 15px;
         }
     }
 }
@@ -181,6 +207,10 @@ table {
     border: 3px solid #e7c7d4;
     /* box-shadow: 0px 0px 10px rgb(231, 199, 212); */
     color: #635a5c;
+
+    &:hover {
+        box-shadow: 0px 0px 15px rgb(231, 199, 212);
+    }
 
     th, td {
         border: 2px solid #e7c7d4;
@@ -215,7 +245,7 @@ table {
 }
 
 #calendar {
-    border: 3px solid #b19f7f;
+    border: 3px solid #ccbca5;
     margin: 2% 0%;
     position: relative;
     box-sizing: border-box;
@@ -227,7 +257,7 @@ table {
         margin: 0;
         padding: 5% 7%;
         font-size: 16px;
-        background-color: #c7b49bd4;
+        background-color: #ccbca5c4;
         /* border-top: 3px solid #b19f7f;
         border-left: 3px solid #b19f7f;
         border-right: 3px solid #b19f7f; */
@@ -262,12 +292,12 @@ table {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #b19f7f;
+    color: #ccbca5;
     padding: 3px;
     font-size: 15px;
     
     &.chosen, &:hover {
-      background-color: #b19f7f;
+      background-color: #ccbca5;
       color: #fff !important;
       font-weight: 700;
       cursor: pointer;
