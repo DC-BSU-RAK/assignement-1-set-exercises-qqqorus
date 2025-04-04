@@ -1,5 +1,5 @@
 * {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -14,29 +14,41 @@ header {
 }
 
 nav {
-    background-color: pink;
+    background-color: #e7c7d4;
     margin: 0;
     text-align: center;
+    padding: 5px;
 }
 
 nav a {
     margin: 1%;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #9e8f92;
 }
 
 h1 {
-    background-color: black;
-    font-size: medium;
-    color: red;
+    background-image: url('https://i.pinimg.com/1200x/fc/1f/7f/fc1f7f3d513511eb7a5ff29213b63124.jpg');
+    background-position: center;
     padding: 1%;
     text-align: center;
     margin: 0;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: #f3efe6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding: 1%;
-    column-gap: 30px;
 }
 
 /* Create three equal columns that floats next to each other */
