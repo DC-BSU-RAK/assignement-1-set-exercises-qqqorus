@@ -27,7 +27,7 @@ nav a {
     color: #fff;
 
     &:hover {
-     color: #9e8f92;
+     color: #635a5c;
     }
 }
 
@@ -69,7 +69,7 @@ h1 {
 }
 
 #todo {
-    border: 2px solid #989c61;
+    border: 3px solid #989c61;
     margin: 2% 0%;
     background-color: #ffffffa7;
     color: #fff;
@@ -79,7 +79,7 @@ h1 {
         margin: 0;
         padding: 4%;
         /* border-radius: 10px 10px 0px 0px; */
-        background-color: #989c61;
+        background-color: #989c61c4;
         text-align: center;
         color: #fff;
     }
@@ -100,19 +100,63 @@ h1 {
         cursor: pointer;
     }
 
+    p {
+        color: #635a5c74;
+        text-align: center;
+        font-size: 15px;
+        padding: 0;
+
+        &:hover {
+            color: #635a5c;
+            cursor: pointer;
+        }
+    }
+
     hr {
         margin: 0;
     }
 }
 
-#mininav {
+#quick {
     border: 1px solid black;
-    margin: 2% 0%;
+    margin: 7% 0%;
+}
+
+#profs {
+    border: 1px solid black;
+    margin: 7% 0%;
+}
+
+#desc {
+    border: 3px solid #c08c9c;
+    margin: 0.8% 0%;
+    background-color: #ffffffa6;
+    padding: 0;
+
+    h3 {
+        margin: 0;
+        padding: 3%;
+        background-color: #c08c9cc4;
+        color: #f3ecda;
+    }
+
+    p {
+        color: #635a5c;
+        padding: 1% 4%;
+        text-align: justify;
+    }
 }
 
 #timetable {
-    margin: 0.8% 0%;
+    margin: 3% 0%;
     padding: 0;
+
+    h3 {
+        color: #c08c9c;
+        margin: 0;
+        padding: 2%;
+        text-align: center;
+    }
 }
 
 table {
@@ -134,7 +178,7 @@ table {
 
     th {
         color: #fff;
-        background-color: #e7c7d4;
+        background-color: #e7c7d4c4;
         border: 2px solid #fff;
         font-size: 15px;
     }
@@ -154,14 +198,13 @@ table {
 
 #notes {
     border: 1px solid black;
-    margin: 0.8% 0%;
+    margin: 3% 0%;
 }
 
 #calendar {
-    /* border: 2px solid #e7c7d4; */
+    border: 3px solid #b19f7f;
     margin: 2% 0%;
     position: relative;
-    background-color: #ffffff00;
     box-sizing: border-box;
     /* border-radius: 20px; */
     overflow: hidden;
@@ -171,7 +214,10 @@ table {
         margin: 0;
         padding: 5% 7%;
         font-size: 16px;
-        background-color: #b19f7f;
+        background-color: #c7b49bd4;
+        /* border-top: 3px solid #b19f7f;
+        border-left: 3px solid #b19f7f;
+        border-right: 3px solid #b19f7f; */
         /* border-radius: 20px 20px 0px 0px; */
         color: #fff;
         text-align: center;
@@ -186,7 +232,7 @@ table {
     grid-row-gap: 10px;
     box-sizing: border-box;
     /* border-radius: 0px 0px 20px 20px; */
-    border: 2px solid #b19f7f;
+    /* border: 3px solid #b19f7f; */
     background-color: #ffffffa3;
 }
   
@@ -209,7 +255,7 @@ table {
     
     &.chosen, &:hover {
       background-color: #b19f7f;
-      color: #e7c7d4 !important;
+      color: #fff !important;
       font-weight: 700;
       cursor: pointer;
       /* border-radius: 7px; */
@@ -232,6 +278,6 @@ table {
 
 #courses {
     border: 1px solid black;
-    margin: 2% 0%;
+    margin: 7% 0%;
 }
 
