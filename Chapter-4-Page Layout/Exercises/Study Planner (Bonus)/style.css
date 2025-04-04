@@ -139,7 +139,9 @@ h1 {
     }
 
     li {
-        
+        margin: 1% 4%;
+        padding: 2%;
+        color: #635a5c;
     }
 }
 
