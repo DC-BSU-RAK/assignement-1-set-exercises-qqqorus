@@ -83,24 +83,28 @@ h1 {
     margin: 2%;
 }
 
-#timetable {
-    border: 1px solid black;
-    margin: 1%;
-}
-
 table {
+    margin: 1%;
     border-collapse: collapse;
     font-size: 12px;
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid #e7c7d4;
+    box-shadow: 0px 0px 10px rgba(114, 114, 113, 0.5);
+    color: #474142;
 
     th, td {
-        border: 1px solid #ddd;
+        border: 2px solid #e7c7d4;
         padding: 7px;
         text-align: center;
+        background-color: #f3efe6;
     }
 
     th {
-        background-color: #f2f2f2;
+        color: #fff;
+        background-color: #e7c7d4;
+        border: 2px solid #f3efe6;
     }
 }
 
