@@ -62,36 +62,59 @@ nav a {
 #column1 {
     float: left;
     width: 21%;
+    height: 910px;
+    border: 1px solid black;
 }
 
 #column2 {
     float: left;
+    border: 1px solid black;
     width: 53%;
+    height: 910px;
 }
 
 #column3 {
     float: left;
+    border: 1px solid black;
+    height: 910px;
     width: 21%;
 }
 
 #student {
     border: 3px solid #531b24;
-    margin: 3% 0%;
+    margin: 2% 0%;
     padding: 0;
     background-color: #f3ecda;
     border-radius: 20px;
+
+    article {
+        margin: 5%;
+        font-size: 15px;
+        color: #531b24;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: #531b24;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
 }
 
 #todo {
     border: 3px solid #531b24;
-    margin: 2% 0%;
+    margin: 7% 0%;
     background-color: #f3ecda;
     color: #fff;
     border-radius: 20px;
 
     label {
         vertical-align: middle;
-        font-size: 14px;
+        font-size: 15px;
         color: #531b24;
     }
 
