@@ -63,19 +63,19 @@ nav a {
     float: left;
     width: 21%;
     height: 910px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #column2 {
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 53%;
     height: 910px;
 }
 
 #column3 {
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 910px;
     width: 21%;
 }
@@ -430,3 +430,16 @@ nav a {
     .py {width: 70%; background-color: #1c8f1c;}
 }
 
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    background-color: #531b24;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100px 100px 0px 0px;
+    color: #e7d8c3;
+}
