@@ -161,7 +161,7 @@ nav a {
         text-align: center;
         padding: 4%;
         background-color: #6a2931;
-        color: #e7d8c3;
+        color: #f3ecda;
         border-radius: 16px;
     }
 }
@@ -170,8 +170,23 @@ nav a {
     border: 3px solid #531b24;
     margin: 2% 0%;
     background-color: #f3ecda;
-    color: #fff;
+    color: #531b24;
     border-radius: 20px;
+
+    ul {
+        font-size: 15px;
+        margin: 11px;
+        padding-left: 25px;
+    }
+
+    li {
+        list-style: circle;
+        padding: 5px;
+
+        i {
+            font-size: 13px;
+        }
+    }
 }
 
 #desc {
@@ -378,7 +393,10 @@ nav a {
 }
 
 #notes {
-    border: 1px solid #531b24;
-    margin: 3% 0%;
+    border: 3px solid #531b24;
+    margin: 2% 0%;
+    background-color: #f3ecda;
+    color: #fff;
+    border-radius: 20px;
 }
 
