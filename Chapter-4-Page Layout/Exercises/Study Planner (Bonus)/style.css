@@ -6,19 +6,20 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f9f7f0;
+    background-image: linear-gradient(#e7d8c3, #c6b7a2, #6a2931, #531b24);
 }
 
 header {
     margin: 0;
-    padding: 1% 1% 0% 1%;
+    padding: 0;
 }
 
 nav {
-    background-color: #c08c9cc4;
+    background-color: #531b24;
     margin: 0;
     text-align: center;
     padding: 5px;
+    border-radius: 0px 0px 50px 50px;
 }
 
 nav a {
@@ -27,14 +28,13 @@ nav a {
     color: #fff;
 
     &:hover {
-     color: #635a5c;
+     color: #989c61;
      cursor: pointer;
     }
 }
 
 h1 {
-    background-image: url('https://i.pinimg.com/1200x/fc/1f/7f/fc1f7f3d513511eb7a5ff29213b63124.jpg');
-    background-position: center;
+    background-color: #d5d2a5;
     padding: 1%;
     text-align: center;
     margin: 0;
@@ -66,11 +66,11 @@ h1 {
 
 #column3 {
     float: left;
-    width: 23%;
+    width: 21%;
 }
 
 #todo {
-    border: 3px solid #c08c9c;
+    border: 3px solid #989c61;
     margin: 2% 0%;
     background-color: #ffffffa7;
     color: #fff;
@@ -80,7 +80,7 @@ h1 {
         margin: 0;
         padding: 4%;
         /* border-radius: 10px 10px 0px 0px; */
-        background-color: #c08c9cc4;
+        background-color: #989c61c4;
         text-align: center;
         color: #fff;
     }
@@ -88,13 +88,13 @@ h1 {
     label {
         vertical-align: middle;
         font-size: 14px;
-        color: #c08c9c;
+        color: #989c61;
     }
 
     input[type=checkbox] {
         margin: 5% 1% 5% 2%;
         line-height: 10px;
-        accent-color: #c08c9c;
+        accent-color: #989c61;
         width: 10%;
         height: 10%;
         vertical-align: middle;
@@ -107,14 +107,14 @@ h1 {
         margin: auto;
         font-size: 20px;
         padding: 1% 3%;
-        background-color: #c08c9c4c;
-        border: 1px solid #c08c9c;
+        background-color: #989c614c;
+        border: 1px solid #989c61;
         border-radius: 5px;
         
         &:hover {
             color: #fff;
-            background-color: #c08c9c;
-            border: 1px solid #c08c9c;
+            background-color: #989c61;
+            border: 1px solid #989c61;
             cursor: pointer;
         }
     }
@@ -206,7 +206,7 @@ h1 {
     padding: 0;
 
     h3 {
-        color: #c08c9c;
+        color: #989c61;
         margin: 0;
         padding: 2%;
         text-align: center;
@@ -219,7 +219,7 @@ table {
     width: 100%;
     /* border-radius: 20px; */
     overflow: hidden;
-    border: 3px solid #c08c9c;
+    border: 3px solid #989c61;
     /* box-shadow: 0px 0px 10px rgb(231, 199, 212); */
     color: #635a5c;
 
@@ -228,7 +228,7 @@ table {
     }
 
     th, td {
-        border: 2px solid #c08c9c;
+        border: 2px solid #989c61;
         padding: 7px;
         text-align: center;
         background-color: #ffffffa6;
@@ -236,8 +236,8 @@ table {
 
     th {
         color: #fff;
-        background-color: #c08c9cc4;
-        border: 2px solid #c08c9c;
+        background-color: #989c61c4;
+        border: 2px solid #989c61;
         font-size: 15px;
     }
 
@@ -250,7 +250,7 @@ table {
     }
 
     .rafia {
-        background-color: #e7c7d4c4;
+        background-color: #b5b179c4;
     }
 }
 
@@ -260,7 +260,7 @@ table {
 }
 
 #calendar {
-    border: 3px solid #958a65;
+    border: 3px solid #989c61;
     margin: 2% 0%;
     position: relative;
     box-sizing: border-box;
@@ -272,7 +272,7 @@ table {
         margin: 0;
         padding: 5% 7%;
         font-size: 16px;
-        background-color: #958a65c4;
+        background-color: #989c61c4;
         /* border-top: 3px solid #b19f7f;
         border-left: 3px solid #b19f7f;
         border-right: 3px solid #b19f7f; */
@@ -300,19 +300,19 @@ table {
     justify-content: center;
     font-size: 15px;
     font-weight: 900;
-    color: #958a65;
+    color: #989c61;
 }
   
 .calendar_number {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #958a65;
+    color: #989c61;
     padding: 3px;
     font-size: 15px;
     
     &.chosen, &:hover {
-      background-color: #958a65;
+      background-color: #989c61;
       color: #fff !important;
       font-weight: 700;
       cursor: pointer;
