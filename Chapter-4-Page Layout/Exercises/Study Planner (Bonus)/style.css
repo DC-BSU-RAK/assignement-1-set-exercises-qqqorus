@@ -143,6 +143,14 @@ nav a {
     }
 }
 
+#events {
+    border: 3px solid #531b24;
+    margin: 2% 0%;
+    background-color: #f3ecda;
+    color: #fff;
+    border-radius: 20px;
+}
+
 #desc {
     border: 3px solid #531b24;
     margin: 0.8% 0%;
