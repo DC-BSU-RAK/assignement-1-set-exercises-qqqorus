@@ -75,8 +75,11 @@ nav a {
 }
 
 #student {
-    border: 1px solid #531b24;
+    border: 3px solid #531b24;
     margin: 3% 0%;
+    padding: 0;
+    background-color: #f3ecda;
+    border-radius: 20px;
 }
 
 #todo {
@@ -204,9 +207,6 @@ nav a {
     padding: 0;
     background-color: #f3ecda;
     border-radius: 20px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 
     h3 {
         color: #f3ecda;
