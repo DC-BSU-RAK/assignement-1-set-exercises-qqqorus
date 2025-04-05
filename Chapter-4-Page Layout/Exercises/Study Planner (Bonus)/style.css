@@ -1,6 +1,15 @@
 * {
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
+
+    h4 {
+        margin: 0;
+        padding: 4%;
+        border-radius: 16px 16px 0px 0px;
+        background-color: #6a2931;
+        text-align: center;
+        color: #f3ecda;
+    }
 }
 
 body {
@@ -65,21 +74,17 @@ nav a {
     width: 21%;
 }
 
+#student {
+    border: 1px solid #531b24;
+    margin: 3% 0%;
+}
+
 #todo {
     border: 3px solid #531b24;
     margin: 2% 0%;
     background-color: #f3ecda;
     color: #fff;
     border-radius: 20px;
-
-    h4 {
-        margin: 0;
-        padding: 4%;
-        border-radius: 16px 16px 0px 0px;
-        background-color: #6a2931;
-        text-align: center;
-        color: #f3ecda;
-    }
 
     label {
         vertical-align: middle;
@@ -235,22 +240,17 @@ nav a {
         }
     
         .akifa {
-            background-color: #c6b7a2c4;
+            background-color: #c6b7a26e;
         }
-    
+        
         .danish {
             background-color: #b19f7fc4;
         }
     
         .rafia {
-            background-color: #9c7965c4;
+            background-color: #9c796588;
         }
     }
-}
-
-#notes {
-    border: 1px solid #531b24;
-    margin: 3% 0%;
 }
 
 #calendar {
@@ -328,17 +328,11 @@ nav a {
     color: #fff;
     border-radius: 20px;
 
-    h4 {
-        margin: 0;
-        padding: 4%;
-        background-color: #6a2931;
-        text-align: center;
-        color: #f3ecda;
-        border-radius: 16px 16px 0px 0px;
-    }
-
     ul {
         color: #531b24;
+        display: table;
+        margin: 0 auto;
+        padding: 5%;
 
         a {
             text-decoration: none;
@@ -346,8 +340,14 @@ nav a {
 
             &:hover {
                 text-decoration: underline;
+                cursor: pointer;
             }
         }
     }
+}
+
+#notes {
+    border: 1px solid #531b24;
+    margin: 3% 0%;
 }
 
