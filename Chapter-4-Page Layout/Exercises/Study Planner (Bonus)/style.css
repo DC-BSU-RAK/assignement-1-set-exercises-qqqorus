@@ -392,11 +392,41 @@ nav a {
     }
 }
 
-#notes {
+#skills {
     border: 3px solid #531b24;
     margin: 2% 0%;
     background-color: #f3ecda;
     color: #fff;
     border-radius: 20px;
+
+    section {
+        color: #531b24;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .container {
+        width: 95%;
+        background-color: #dddddda8;
+        margin: 5px;
+        padding: 0;
+    }
+
+    p {
+        margin: 5px;
+        padding: 0;
+    }
+      
+    .skills {
+        text-align: right;
+        padding: 5px;
+        color: #fff;
+        font-size: 15px;
+    }
+      
+    .html {width: 90%; background-color: #e54d26;}
+    .css {width: 80%; background-color: #0070ba;}
+    .js {width: 20%; background-color: #f89b34;}
+    .py {width: 70%; background-color: #1c8f1c;}
 }
 
