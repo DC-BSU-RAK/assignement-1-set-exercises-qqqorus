@@ -6,7 +6,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(#e7d8c3, #c6b7a2, #6a2931, #531b24);
+    background-color: #c6b7a2;
+    /* background-image: linear-gradient(#e7d8c3, #c6b7a2, #6a2931, #531b24); */
 }
 
 header {
@@ -14,18 +15,27 @@ header {
     padding: 0;
 }
 
+h1 {
+    background-color: #6a2931;
+    padding: 1%;
+    text-align: center;
+    margin: 0;
+    color: #c6b7a2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 nav {
     background-color: #531b24;
     margin: 0;
     text-align: center;
     padding: 5px;
-    border-radius: 0px 0px 50px 50px;
+    border-radius: 0px 0px 100px 100px;
 }
 
 nav a {
     margin: 1%;
     text-decoration: none;
-    color: #fff;
+    color: #e7d8c3;
 
     &:hover {
      color: #989c61;
@@ -33,23 +43,9 @@ nav a {
     }
 }
 
-h1 {
-    background-color: #d5d2a5;
-    padding: 1%;
-    text-align: center;
-    margin: 0;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    color: #f3ecda;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 1%;
     margin: 0;
 }
@@ -70,31 +66,31 @@ h1 {
 }
 
 #todo {
-    border: 3px solid #989c61;
+    border: 3px solid #531b24;
     margin: 2% 0%;
-    background-color: #ffffffa7;
+    background-color: #e7d8c3;
     color: #fff;
-    /* border-radius: 10px; */
+    border-radius: 20px;
 
     h4 {
         margin: 0;
         padding: 4%;
-        /* border-radius: 10px 10px 0px 0px; */
-        background-color: #989c61c4;
+        border-radius: 16px 16px 0px 0px;
+        background-color: #6a2931;
         text-align: center;
-        color: #fff;
+        color: #c6b7a2;
     }
 
     label {
         vertical-align: middle;
         font-size: 14px;
-        color: #989c61;
+        color: #531b24;
     }
 
     input[type=checkbox] {
         margin: 5% 1% 5% 2%;
         line-height: 10px;
-        accent-color: #989c61;
+        accent-color: #531b24;
         width: 10%;
         height: 10%;
         vertical-align: middle;
@@ -102,19 +98,19 @@ h1 {
     }
 
     button {
-        color: #635a5c74;
+        color: #e7d8c3;
         display: block;
         margin: auto;
         font-size: 20px;
         padding: 1% 3%;
-        background-color: #989c614c;
-        border: 1px solid #989c61;
+        background-color: #531b24;
+        border: 1px solid #e7d8c3;
         border-radius: 5px;
         
         &:hover {
             color: #fff;
-            background-color: #989c61;
-            border: 1px solid #989c61;
+            background-color: #531b24b1;
+            border: 1px solid #e7d8c3;
             cursor: pointer;
         }
     }
@@ -124,29 +120,13 @@ h1 {
     }
 }
 
-#quick {
-    border: 3px solid #989c61;
+#profs {
+    border: 1px solid #531b24;
     margin: 7% 0%;
-    background-color: #ffffffa7;    
-    color: #fff;
-
-    h4 {
-        margin: 0;
-        padding: 4%;
-        background-color: #989c61c4;
-        text-align: center;
-        color: #fff;
-    }
-
-    li {
-        margin: 1% 4%;
-        padding: 2%;
-        color: #635a5c;
-    }
 }
 
 #desc {
-    border: 3px solid #989c61;
+    border: 3px solid #531b24;
     margin: 0.8% 0%;
     background-color: #ffffffa6;
     padding: 0;
@@ -189,7 +169,7 @@ h1 {
             margin: auto;
             background-color: #d5d2a5;
             color: #635a5c;
-            border: 3px solid #989c61;
+            border: 3px solid #531b24;
             border-radius: 5px;
             padding: 2%;
             font-size: 15px;
@@ -219,7 +199,7 @@ table {
     width: 100%;
     /* border-radius: 20px; */
     overflow: hidden;
-    border: 3px solid #989c61;
+    border: 3px solid #531b24;
     /* box-shadow: 0px 0px 10px rgb(231, 199, 212); */
     color: #635a5c;
 
@@ -228,7 +208,7 @@ table {
     }
 
     th, td {
-        border: 2px solid #989c61;
+        border: 2px solid #531b24;
         padding: 7px;
         text-align: center;
         background-color: #ffffffa6;
@@ -237,7 +217,7 @@ table {
     th {
         color: #fff;
         background-color: #989c61c4;
-        border: 2px solid #989c61;
+        border: 2px solid #531b24;
         font-size: 15px;
     }
 
@@ -255,12 +235,12 @@ table {
 }
 
 #notes {
-    border: 1px solid black;
+    border: 1px solid #531b24;
     margin: 3% 0%;
 }
 
 #calendar {
-    border: 3px solid #989c61;
+    border: 3px solid #531b24;
     margin: 2% 0%;
     position: relative;
     box-sizing: border-box;
@@ -334,8 +314,24 @@ table {
     }
 }
 
-#profs {
-    border: 1px solid black;
+#quick {
+    border: 3px solid #531b24;
     margin: 7% 0%;
+    background-color: #e7d8c3;    
+    color: #fff;
+
+    h4 {
+        margin: 0;
+        padding: 4%;
+        background-color: #6a2931;
+        text-align: center;
+        color: #c6b7a2;
+    }
+
+    li {
+        margin: 1% 4%;
+        padding: 2%;
+        color: #531b24;
+    }
 }
 
