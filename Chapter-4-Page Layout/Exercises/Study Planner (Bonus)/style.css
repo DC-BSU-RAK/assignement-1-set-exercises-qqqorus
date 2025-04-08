@@ -6,35 +6,36 @@
         margin: 0;
         padding: 4%;
         border-radius: 16px 16px 0px 0px;
-        background-color: #6a2931;
+        background-color: #102e4a;
         text-align: center;
-        color: #f3ecda;
+        color: #fef7e5;
     }
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #d4c4ad;
-    /* background-image: linear-gradient(#e7d8c3, #c6b7a2, #6a2931, #531b24); */
+    background-color: #6386ac;
 }
 
 header {
     margin: 0;
     padding: 0;
+    /* box-shadow: 0px 0px 20px #0ff; */
+    border-radius: 0px 0px 30px 30px;
 }
 
 h1 {
-    background-color: #6a2931;
+    background-color: #1a4a78;
     padding: 1%;
     text-align: center;
     margin: 0;
-    color: #f3ecda;
+    color: #fef7e5;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav {
-    background-color: #531b24;
+    background-color: #102e4a;
     margin: 0;
     text-align: center;
     padding: 5px;
@@ -44,10 +45,10 @@ nav {
 nav a {
     margin: 1%;
     text-decoration: none;
-    color: #e7d8c3;
+    color: #fef7e5;
 
     &:hover {
-     color: #b9a488;
+     color: #687e8b;
      cursor: pointer;
     }
 }
@@ -57,6 +58,7 @@ nav a {
     justify-content: space-around;
     padding: 1%;
     margin: 0;
+    
 }
 
 #column1 {
@@ -71,6 +73,7 @@ nav a {
     /* border: 1px solid black; */
     width: 53%;
     height: 910px;
+    
 }
 
 #column3 {
@@ -81,22 +84,22 @@ nav a {
 }
 
 #student {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 2% 0%;
     padding: 0;
-    background-color: #f3ecda;
+    background-color: #fef7e5;
     border-radius: 20px;
 
     article {
         margin: 5%;
         font-size: 15px;
-        color: #531b24;
+        color: #081725;
         text-align: center;
     }
 
     a {
         text-decoration: none;
-        color: #531b24;
+        color: #081725;
 
         &:hover {
             text-decoration: underline;
@@ -106,22 +109,22 @@ nav a {
 }
 
 #todo {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 7% 0%;
-    background-color: #f3ecda;
-    color: #fff;
+    background-color: #fef7e5;
+    color: #fef7e5;
     border-radius: 20px;
 
     label {
         vertical-align: middle;
         font-size: 15px;
-        color: #531b24;
+        color: #081725;
     }
 
     input[type=checkbox] {
         margin: 5% 1% 5% 2%;
         line-height: 10px;
-        accent-color: #531b24;
+        accent-color: #081725;
         width: 10%;
         height: 10%;
         vertical-align: middle;
@@ -129,19 +132,19 @@ nav a {
     }
 
     button {
-        color: #e7d8c3;
+        color: #fef7e5;
         display: block;
         margin: auto;
         font-size: 20px;
         padding: 1% 3%;
-        background-color: #531b24;
-        border: 1px solid #e7d8c3;
+        background-color: #081725;
+        border: 1px solid #fef7e5;
         border-radius: 5px;
         
         &:hover {
-            color: #fff;
-            background-color: #531b24b1;
-            border: 1px solid #e7d8c3;
+            color: #fef7e5;
+            background-color: #081725b1;
+            border: 1px solid #fef7e5;
             cursor: pointer;
         }
     }
@@ -152,7 +155,7 @@ nav a {
 }
 
 #profs {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 7% 0%;
     border-radius: 20px;
 
@@ -160,17 +163,17 @@ nav a {
         margin: 0;
         text-align: center;
         padding: 4%;
-        background-color: #6a2931;
-        color: #f3ecda;
+        background-color: #102e4a;
+        color: #fef7e5;
         border-radius: 16px;
     }
 }
 
 #events {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 2% 0%;
-    background-color: #f3ecda;
-    color: #531b24;
+    background-color: #fef7e5;
+    color: #081725;
     border-radius: 20px;
 
     ul {
@@ -190,22 +193,22 @@ nav a {
 }
 
 #desc {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 0.8% 0%;
-    background-color: #f3ecda;
+    background-color: #fef7e5;
     border-radius: 20px;
     padding: 0;
 
     h3 {
         margin: 0;
         padding: 3%;
-        background-color: #6a2931;
+        background-color: #102e4a;
         border-radius: 16px 16px 0px 0px;
-        color: #f3ecda;
+        color: #fef7e5;
     }
 
     article {
-        color: #531b24;
+        color: #081725;
         padding: 3%;
         text-align: justify;
         font-size: 15px;
@@ -233,9 +236,9 @@ nav a {
         button {
             display: block;
             margin: auto;
-            background-color: #6a2931;
-            color: #e7d8c3;
-            border: 3px solid #531b24;
+            background-color: #102e4a;
+            color: #fef7e5;
+            border: 3px solid #081725;
             border-radius: 5px;
             padding: 2%;
             font-size: 15px;
@@ -248,59 +251,62 @@ nav a {
 }
 
 #timetable {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 3% 0%;
     padding: 0;
-    background-color: #f3ecda;
+    background-color: #fef7e5;
     border-radius: 20px;
 
     h3 {
-        color: #f3ecda;
+        color: #fef7e5;
         margin: 0;
         padding: 2%;
         text-align: center;
-        background-color: #6a2931;
+        background-color: #102e4a;
         border-radius: 16px 16px 0px 0px;
     }
 
     table {
         border-collapse: collapse;
         font-size: 12px;
-        border: 3px solid #531b24;
-        color: #531b24;
+        border: 3px solid #081725;
+        color: #081725;
         margin: 20px;
         width: 94%;
         
         th, td {
-            border: 2px solid #531b24;
+            border: 2px solid #081725;
             padding: 7px;
             text-align: center;
-            background-color: #ffffffa6;
+            background-color: #e8e3d6;
         }
     
         th {
-            color: #f3ecda;
-            background-color: #6a2931;
-            border: 2px solid #531b24;
+            color: #fef7e5;
+            background-color: #102e4a;
+            border: 2px solid #081725;
             font-size: 15px;
         }
     
         .akifa {
-            background-color: #c6b7a26e;
+            color: #fef7e5;
+            background-color: #687e8b;
         }
         
         .danish {
-            background-color: #b19f7fc4;
+            color: #fef7e5;
+            background-color: #abaeb5;
         }
     
         .rafia {
-            background-color: #9c796588;
+            color: #fef7e5;
+            background-color: #5a636a;
         }
     }
 }
 
 #calendar {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 2% 0%;
     position: relative;
     box-sizing: border-box;
@@ -311,8 +317,8 @@ nav a {
         margin: 0;
         padding: 5% 7%;
         font-size: 16px;
-        background-color: #6a2931;
-        color: #fff;
+        background-color: #102e4a;
+        color: #fef7e5;
         text-align: center;
     }
 }
@@ -324,7 +330,7 @@ nav a {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     box-sizing: border-box;
-    background-color: #f3ecda;
+    background-color: #fef7e5;
 }
   
 .calendar_day {
@@ -333,20 +339,20 @@ nav a {
     justify-content: center;
     font-size: 15px;
     font-weight: 900;
-    color: #531b24;
+    color: #081725;
 }
   
 .calendar_number {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #531b24;
+    color: #081725;
     padding: 3px;
     font-size: 15px;
     
     &.chosen, &:hover {
-      background-color: #531b24;
-      color: #fff !important;
+      background-color: #081725;
+      color: #fef7e5 !important;
       font-weight: 700;
       cursor: pointer;
       /* border-radius: 7px; */
@@ -368,21 +374,21 @@ nav a {
 }
 
 #teachings {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 7% 0%;
-    background-color: #f3ecda;    
-    color: #fff;
+    background-color: #fef7e5;    
+    color: #fef7e5;
     border-radius: 20px;
 
     ul {
-        color: #531b24;
+        color: #081725;
         display: table;
         margin: 0 auto;
         padding: 5%;
 
         a {
             text-decoration: none;
-            color: #531b24;
+            color: #081725;
 
             &:hover {
                 text-decoration: underline;
@@ -393,14 +399,14 @@ nav a {
 }
 
 #skills {
-    border: 3px solid #531b24;
+    border: 3px solid #081725;
     margin: 2% 0%;
-    background-color: #f3ecda;
-    color: #fff;
+    background-color: #fef7e5;
+    color: #fef7e5;
     border-radius: 20px;
 
     section {
-        color: #531b24;
+        color: #081725;
         font-size: 15px;
         margin: 20px;
     }
@@ -420,7 +426,7 @@ nav a {
     .skills {
         text-align: right;
         padding: 5px;
-        color: #fff;
+        color: #fef7e5;
         font-size: 15px;
     }
       
@@ -436,10 +442,10 @@ footer {
 }
 
 h5 {
-    background-color: #531b24;
+    background-color: #102e4a;
     margin: 0;
     text-align: center;
     padding: 10px;
     border-radius: 100px 100px 0px 0px;
-    color: #e7d8c3;
+    color: #fef7e5;
 }
