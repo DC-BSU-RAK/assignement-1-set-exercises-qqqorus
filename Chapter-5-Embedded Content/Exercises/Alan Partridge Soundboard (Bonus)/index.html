@@ -16,17 +16,17 @@
             <tr>
                 <td><button onclick='playSound1()'>Ah-ha</button></td>
                 <td><button onclick='playSound2()'>Back of the Net</button></td>
-                <td><button>Bang! Out of order.</button></td>
+                <td><button onclick='playSound3()'>Bang! Out of order.</button></td>
             </tr>
             <tr>
-                <td><button>Dan</button></td>
-                <td><button>Email of the evening</button></td>
-                <td><button>Hello, Partridge</button></td>
+                <td><button onclick='playSound4()'>Dan</button></td>
+                <td><button onclick='playSound5()'>Email of the evening</button></td>
+                <td><button onclick='playSound6()'>Hello, Partridge</button></td>
             </tr>
             <tr>
-                <td><button>I ate a scotch egg</button></td>
-                <td><button>I'm Confused</button></td>
-                <td><button>What</button></td>
+                <td><button onclick='playSound7()'>I ate a scotch egg</button></td>
+                <td><button onclick='playSound8()'>I'm Confused</button></td>
+                <td><button onclick='playSound9()'>Smell my cheese!</button></td>
             </tr>
         </table>
     </main>
@@ -36,8 +36,44 @@
             var music = new Audio('Audio/ah-ha.mp3');
             music.play()
         }
+
         function playSound2(){
             var music = new Audio('Audio/back-of-the-net.mp3');
+            music.play()
+        }
+
+        function playSound3(){
+            var music = new Audio('Audio/bangoutoforder.mp3');
+            music.play()
+        }
+
+        function playSound4(){
+            var music = new Audio('Audio/dan.mp3');
+            music.play()
+        }
+
+        function playSound5(){
+            var music = new Audio('Audio/emailoftheevening.mp3');
+            music.play()
+        }
+
+        function playSound6(){
+            var music = new Audio('Audio/hellopartridge.mp3');
+            music.play()
+        }
+
+        function playSound7(){
+            var music = new Audio('Audio/iateascotchegg.mp3');
+            music.play()
+        }
+
+        function playSound8(){
+            var music = new Audio('Audio/imconfused.mp3');
+            music.play()
+        }
+
+        function playSound9(){
+            var music = new Audio('Audio/smellmycheese.mp3');
             music.play()
         }
     </script>
