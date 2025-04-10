@@ -11,13 +11,10 @@ body {
     background-attachment: fixed;
 }
 
-aside {
-    float: right;
-    top: 0;
-}
-
 table {
     border-spacing: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table, td {
