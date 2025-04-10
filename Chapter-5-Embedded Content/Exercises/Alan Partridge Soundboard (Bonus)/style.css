@@ -25,45 +25,44 @@ table {
     margin: auto;
 }
 
-table, td {
-    /* border: 2px solid #e3c04c; */
-    border-radius: 10px;
-    /* text-align: center; */
-}
-
 td {
     padding: 20px 10px;
     background-color: beige;
     border: 3px solid #e3c04c;
+    border-radius: 20px;
 
     b {
         font-size: 18px;
-        padding-left: 10px;
-        text-shadow: -1px -1px rgba(0, 0, 0, 0.496);
+        padding: 10px 10px 0px;
+        color: #000;
     }
-}
 
-button {
-    padding: 5px 10px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: auto;
-    margin-right: auto;
-    color: #901612;
-    background-color: #00000000;
-    border-radius: 20px;
-    border: none;
-    
+    h2 {
+        color: #000;
+        padding: 0px 10px 10px;
+        margin: 0;
+    }
+
     &:hover {
         background-color: #e3c04c;
-        color: #901612;
-        border-radius: 20px;
+        border: 3px solid beige;
+        border-radius: 30px;
+        cursor: pointer;
+
+        b {
+            color: #901612;
+        }
+
+        h2 {
+            color: #901612;
+        }
     }
 
     &:active {
         background-color: #cdb873e3;
     }
 }
+
 
 @font-face {
     font-family: 'Cursive';
