@@ -1,6 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(227, 192, 76);
+    color: #e3c04c;
 }
 
 body {
@@ -18,11 +18,22 @@ table {
 }
 
 table, td {
-    border: 3px solid gold;
+    border: 3px solid #e3c04c;
 }
 
 button {
     padding: 20px;
     width: 200px;
     font-weight: bold;
+    color: #000;
+    
+    &:hover {
+        background-color: #e3c04c;
+        color: rgb(144, 22, 18);
+    }
+
+    &:active {
+        background-color: #a08a41;
+        color: #000;
+    }
 }
