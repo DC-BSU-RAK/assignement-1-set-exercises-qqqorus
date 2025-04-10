@@ -18,14 +18,24 @@ table {
 }
 
 table, td {
-    border: 3px solid #e3c04c;
+    border: 2px solid #e3c04c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
 }
 
 button {
-    padding: 20px;
-    width: 200px;
+    padding: 15px;
+    font-size: large;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
     color: #000;
+    background-color: #00000000;
+    border: none;
     
     &:hover {
         background-color: #e3c04c;
