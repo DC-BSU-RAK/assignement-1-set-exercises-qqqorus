@@ -15,22 +15,22 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    padding: 30px;
 }
 
 #column1 {
     width: 40%;
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #column2 {
     width: 60%;
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #e3c45b;
     font-size: 40px;
@@ -50,6 +50,25 @@ h1 {
 #speak {
     display: block;
     margin: auto;
+    font-size: 15px;
+    color: #430b09;
+    background-color: #e3c45b;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #e3c04cc6;
+    }
+}
+
+#note {
+    text-align: center;
+    
+    small, b {
+        color: #000;
+        font-size: 14px;
+}
 }
 
 table {
