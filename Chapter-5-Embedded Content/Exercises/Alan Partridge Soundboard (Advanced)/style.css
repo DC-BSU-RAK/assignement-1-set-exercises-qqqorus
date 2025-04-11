@@ -19,14 +19,12 @@ body {
 }
 
 #column1 {
-    padding-top: 10%;
+    padding-top: 9%;
     width: 40%;
-    float: left;
 }
 
 #column2 {
     width: 60%;
-    float: left;
 }
 
 h1 {
