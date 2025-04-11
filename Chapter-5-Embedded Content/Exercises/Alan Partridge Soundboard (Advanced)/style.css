@@ -149,6 +149,10 @@ td {
         border-radius: 10px;
         padding: 1%;
         margin: 0px 10px;
+
+        &:active {
+            background-color: #430b09ba;
+        }
     }
 
     .left, .right {
