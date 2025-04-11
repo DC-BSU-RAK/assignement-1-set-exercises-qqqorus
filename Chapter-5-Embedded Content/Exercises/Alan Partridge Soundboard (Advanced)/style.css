@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    padding: 30px;
+    padding: 25px;
 }
 
 #column1 {
@@ -42,7 +42,7 @@ h1 {
     border-radius: 20px;
     border: 3px inset #e3c04c;
     padding: 10px;
-    margin: 10px 30px;
+    margin: 10px 10px;
     font-size: 14px;
     color: #000;
 }
@@ -72,15 +72,14 @@ h1 {
 }
 
 .scroll-table {
-    height: 70%;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    margin-right: 2%;
-    margin-left: 3%;
+    margin-right: 20px;
+    margin-left: 25px;
 
     &::-webkit-scrollbar {
         background-color: #00000000;
@@ -90,7 +89,6 @@ h1 {
 table {
     border-spacing: 15px;
     margin: 0 2%;
-    border: 1px solid black;
     width: 100%;
     overflow: hidden;
     table-layout: fixed;
@@ -140,7 +138,7 @@ td {
 .buttons {
     display: flex;
     justify-content: space-around;
-    margin: 3%;
+    padding: 0;
     margin-top: 5%;
 
     button {
