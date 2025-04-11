@@ -11,10 +11,10 @@ function TexttoAudio () {
 
 function leftScroll() {
     const left = document.querySelector(".scroll-table");
-    left.scrollBy(-200, 0);
+    left.scrollBy(-750, 0);
 }
 
 function rightScroll() {
     const right = document.querySelector(".scroll-table");
-    right.scrollBy(200, 0);
+    right.scrollBy(750, 0);
 }
