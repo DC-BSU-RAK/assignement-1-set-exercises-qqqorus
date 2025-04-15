@@ -11,7 +11,10 @@ body {
     min-height: 100vh;
     margin: 0;
     background-color: #31364d;
-    color: #333;
+
+    .light-mode {
+        background-color: #ffe9b2;
+    }
 }
 
 .calculator {

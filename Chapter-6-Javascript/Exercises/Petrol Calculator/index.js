@@ -28,3 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
         resultDisplay.textContent = `Total Cost: €${totalCost.toFixed(2)}`;
     }
 });
+
+function lightMode() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+}
