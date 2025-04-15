@@ -82,15 +82,15 @@ button {
     display: block;
     margin: 0 auto;
     transition: background-color 0.3s, transform 0.2s;
-}
 
-button:hover {
-    background-color: #f0b111;
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
+    &:hover {
+        background-color: #f0b111;
+        transform: translateY(-2px);
+    }
+    
+    &:active {
+        transform: translateY(0);
+    }
 }
 
 #result {
