@@ -7,21 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="calculator">
         <h1>Petrol Cost Calculator</h1>
         <p><i>Drive Greener, Save Bigger!</i></p>
         
-        <div>
+        <div class="inputarea">
             <label for="cost-per-liter">Cost per liter (€)</label>    
-            <input type="number" id="cost-per-liter">
+            <input 
+                type="number" 
+                id="cost-per-liter" 
+                step="0.01" 
+                min="0" 
+                value="1.72" 
+                placeholder="Enter cost per liter"
+            >
         </div>
         
-        <div>
+        <div class="inputarea">
             <label for="liters">Liters purchased</label>
-            <input type="number" id="liters">
+            <input 
+                type="number" 
+                id="liters" 
+                step="0.1" 
+                min="0" 
+                value="0" 
+                placeholder="Enter liters purchased"
+            >
         </div>
 
         <button id="calculate-btn">Calculate Total Cost</button>
+
+        <p id="result"></p>
     </div>
     
 </body>
