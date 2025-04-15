@@ -115,3 +115,73 @@ button {
     margin: 0;
     color: #6a89b1;
 }
+
+/* light mode styles */
+body.light-mode {
+    background-color: #f0f8fb;
+}
+
+.light-mode .calculator {
+    background-color: #efefef;
+    box-shadow: 0px 0px 50px 1px #0000004d;
+    color: #00223e;
+    border: 5px solid #000;
+}
+
+.light-mode h1 {
+    color: #105126;
+}
+
+.light-mode p i {
+    color: #a8c35c;
+}
+
+.light-mode input {
+    background-color: #fff;
+    color: #000;
+    border-color: #444;
+}
+
+.light-mode label {
+    color: #00223e;
+}
+
+.light-mode #result {
+    background-color: #9aad62;
+    color: #fff;
+}
+
+.light-mode button:not(.theme-toggle) {
+    background-color: #105126;
+    color: #a8c35c;
+}
+
+.light-mode button:not(.theme-toggle):hover {
+    background-color: #177034;
+}
+
+.light-mode #copyright {
+    color: #105126;
+}
+
+/* style for the toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #f4ad00;
+    color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 70px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    width: 50px;
+}
+
+.light-mode .theme-toggle {
+    border-color: #555;
+    color: #fff;
+    background-color: #00223e;
+}

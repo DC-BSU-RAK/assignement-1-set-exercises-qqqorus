@@ -27,9 +27,33 @@ document.addEventListener('DOMContentLoaded', function() {
         // Display the result with 2 decimal places and euro symbol
         resultDisplay.textContent = `Total Cost: €${totalCost.toFixed(2)}`;
     }
+
+    // Theme toggle button's functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Checks for saved theme preference or use system preference
+    const currentTheme = localStorage.getItem('theme') || 
+                        (prefersDarkScheme.matches ? 'dark' : 'light');
+    
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeToggle.textContent = '☀️ Light Mode';
+    }
+    
+    // Changes the theme when the button is clicked
+    themeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('light-mode');
+        const isLight = document.body.classList.contains('light-mode');
+        
+        // Changes the theme and text when the current theme is the opposite 
+        if (isLight) {
+            themeToggle.textContent = '🌙 Dark Mode';
+            localStorage.setItem('theme', 'light');
+        } else {
+            themeToggle.textContent = '☀️ Light Mode';
+            localStorage.setItem('theme', 'dark');
+        }
+    });
 });
 
-function lightMode() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-}
