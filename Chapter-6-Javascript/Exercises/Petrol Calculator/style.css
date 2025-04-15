@@ -1,0 +1,34 @@
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #31364d;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 28px;
+    color: #45e336;
+}
+
+p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-weight: bold;
+
+    i {
+        color: #fe870b;
+    }
+
+}
