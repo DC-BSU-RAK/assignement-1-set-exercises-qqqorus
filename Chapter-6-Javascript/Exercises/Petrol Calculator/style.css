@@ -104,3 +104,11 @@ button {
     color: #fff;
     min-height: 20px;
 }
+
+#copyright {
+    font-size: small;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    color: #6a89b1;
+}
