@@ -12,7 +12,9 @@
 
 </head>
 <body>
+    <!-- Main container -->
     <main id="container">
+        <!-- Left column - Text-to-speech functionality -->
         <div id="column1">
             <h1>Text-To-Speech</h1>
             <form>
@@ -21,17 +23,23 @@
             <div><button type="button" id="speak" onclick="TexttoAudio()">Speak</button></div><br>
             <div id="note"><small><b>NOTE: </b>Enter your text and click the 'Speak' button.</small></div>
         </div>
+
+        <!-- Right column - Soundboard -->
         <div id="column2">
             <h1>Alan Partridge Soundboard</h1>
+
+            <!-- Scrollable sound clips table -->
             <div class="scroll-table">
+                <!-- First table of sound clips (1-9) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound1').play()">
                             <audio src="audio/ah-ha.mp3" id="sound1"></audio>
                             <b>01</b><br>
                             <h2>Ah-ha!</h2>
-                            <i>00:01.30</i>
+                            <i>00:01.30</i> <!-- Clip duration -->
                         </td>
+                        <!-- More sound clips in this row... -->
                         <td onclick="document.getElementById('sound2').play()">
                             <audio src="audio/back-of-the-net.mp3" id="sound2"></audio>
                             <b>02</b><br>
@@ -45,6 +53,7 @@
                             <i>00:01.30</i>
                         </td>
                     </tr>
+                    <!-- Additional rows... -->
                     <tr>
                         <td onclick="document.getElementById('sound4').play()">
                             <audio src="audio/dan.mp3" id="sound4"></audio>
@@ -86,6 +95,8 @@
                         </td>
                     </tr>
                 </table>
+
+                <!-- Second table of sound clips (10-18) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound10').play()">
@@ -148,6 +159,8 @@
                         </td>
                     </tr>
                 </table>
+
+                <!-- Third table of sound clips (19-27) -->
                 <table>
                     <tr>
                         <td onclick="document.getElementById('sound19').play()">
@@ -211,13 +224,16 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- Navigation buttons for soundboard -->
             <section class="buttons">
-                <button class="left" onclick="leftScroll()">&emsp13;<&emsp13;</button>
-                <button class="right" onclick="rightScroll()">&emsp13;>&emsp13;</button>
+                <button class="left" onclick="leftScroll()">&emsp13;<&emsp13;</button> <!-- Left scroll -->
+                <button class="right" onclick="rightScroll()">&emsp13;>&emsp13;</button> <!-- Right scroll -->
             </section>
         </div>
     </main>
     
+    <!-- Link to JavaScript external file -->
     <script src="script.js"></script>
 </body>
 </html>
