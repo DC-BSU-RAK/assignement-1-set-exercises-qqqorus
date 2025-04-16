@@ -8,15 +8,26 @@
     <link rel="icon" href="">
 </head>
 <body>
+    <!-- Text content container -->
     <div id="textcontainer">
-        <h1>Armageddon</h1>
-        <h2>aespa</h2>
+        <h1>Armageddon</h1> <!-- Title of the video -->
+        <h2>aespa</h2> <!-- Artist name -->
     </div>
+
+    <!-- Video player container -->
     <div id="videocontainer">
+        <!-- Video element with multiple configuration options -->
         <video controls width="436" height="240" poster="images/poster.jpg" loop>
-            <source src="videos/armageddon.mp4" type="video/mp4">
-            <track src="subtitles/armageddon (en).vtt" kind="subtitles" srclang="en" label="English" default>
-            <track src="subtitles/armageddon (kr).vtt" kind="subtitles" srclang="kr" label="Korean">
+            <!-- 
+                Video attributes:
+                - controls: shows default video controls (play/pause, volume, etc.)
+                - width/height: sets player dimensions (436x240 pixels)
+                - poster (thumbnail): is image shown before video plays
+                - loop: the video will automatically replay when finished
+            -->
+            <source src="videos/armageddon.mp4" type="video/mp4"> <!-- The video file (MP4 format) -->
+            <track src="subtitles/armageddon (en).vtt" kind="subtitles" srclang="en" label="English" default> <!-- English subtitles -->
+            <track src="subtitles/armageddon (kr).vtt" kind="subtitles" srclang="kr" label="Korean"> <!-- Korean subtitles -->
         </video>
     </div>
 </body>
