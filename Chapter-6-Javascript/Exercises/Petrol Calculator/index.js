@@ -1,31 +1,36 @@
 // The DOM should be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the references to the DOM elements which will be used here
-    const costPerLiterInput = document.getElementById('cost-per-liter');
-    const litersInput = document.getElementById('liters');
-    const calculateBtn = document.getElementById('calculate-btn');
-    const resultDisplay = document.getElementById('result');
+    // Get references to all interactive elements which will be used here
+    const fuelPriceInput = document.getElementById('cost-per-liter');
+    const fuelQuantityInput = document.getElementById('liters');
+    const calculateTotalButton = document.getElementById('calculate-btn');
+    const calculationResultDisplay = document.getElementById('result');
 
-    // Executes the calculateTotalCost function when the button is clicked
-    calculateBtn.addEventListener('click', calculateTotalCost);
+    // Executes the calculateTotalButton function when the button is clicked
+    calculateTotalButton.addEventListener('click', computeFuelCost);
 
-    // Function to calculate and display the total cost
-    function calculateTotalCost() {
+    // A helper function to validate numeric inputs which will be executed inside the computeFuelCost function
+    function isInvalidNumber(value) {
+        return isNaN(value) || value < 0;
+    }
+
+    // Funciton to calculate and display the total fuel cost
+    function computeFuelCost() {
         // Get the values from the input fields and convert them to numbers
-        const costPerLiter = parseFloat(costPerLiterInput.value);
-        const liters = parseFloat(litersInput.value);
+        const pricePerLiter = parseFloat(fuelPriceInput.value);
+        const litersPurchased = parseFloat(fuelQuantityInput.value);
         
         // Checks the inputs if the value is "Not-a-Number" or NaN, and if the value is below 0
-        if (isNaN(costPerLiter) || isNaN(liters) || costPerLiter < 0 || liters < 0) {
-            resultDisplay.textContent = 'Please enter valid positive numbers';
+        if (isInvalidNumber(pricePerLiter) || isInvalidNumber(litersPurchased)) {
+            calculationResultDisplay.textContent = 'Please enter valid positive numbers';
             return; // Displays the message if the following criteria is met
         }
         
-        // Calculates the total cost
-        const totalCost = costPerLiter * liters;
+        // Calculates the total amount
+        const totalTransactionAmount = pricePerLiter * litersPurchased;
         
-        // Display the result with 2 decimal places and euro symbol
-        resultDisplay.textContent = `Total Cost: €${totalCost.toFixed(2)}`;
+        // Show formatted result with 2 decimal places and euro symbol
+        calculationResultDisplay.textContent = `Total Cost: €${totalTransactionAmount.toFixed(2)}`;
     }
 
     // Theme toggle button's functionality
