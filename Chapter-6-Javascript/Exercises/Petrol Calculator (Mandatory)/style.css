@@ -3,6 +3,7 @@
     color: #fff;
 }
 
+/* Main page layout - centers content vertically */
 body {
     display: flex;
     flex-direction: column;
@@ -10,30 +11,34 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #31364d;
+    background-color: #31364d; /* Default dark theme background */
 
+    /* Nested light mode theme */
     .light-mode {
         background-color: #ffe9b2;
     }
 }
 
+/* Calculator container styling */
 .calculator {
     background-color: #00223e;
     border: 5px solid #6a89b1;
     border-radius: 10px;
-    box-shadow: 0px 0px 50px 1px #2d4c6f;
+    box-shadow: 0px 0px 50px 1px #2d4c6f; /* Glowing effect */
     padding: 32px;
     width: 100%;
     max-width: 400px;
 }
 
+/* Heading styles with accent color */
 h1 {
     text-align: center;
     margin: 10px 0 0;
     font-size: 28px;
-    color: #45e336;
+    color: #45e336; /* Green accent color */
 }
 
+/* Tagline styling */
 p {
     text-align: center;
     margin-top: 0;
@@ -41,21 +46,24 @@ p {
     font-weight: bold;
 
     i {
-        color: #fe870b;
+        color: #fe870b; /* Orange accent for italic text */
     }
 
 }
 
+/* Input field container spacing */
 .inputarea {
     margin-bottom: 24px;
 }
 
+/* Form label styling */
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
+/* Input field styling with focus effects */
 input {
     width: 100%;
     padding: 12px;
@@ -73,6 +81,7 @@ input {
     }
 }
 
+/* Primary button styling with hover effects */
 button {
     background-color: #f4ad00;
     color: #b76200;
@@ -88,14 +97,15 @@ button {
 
     &:hover {
         background-color: #f0b111;
-        transform: translateY(-2px);
+        transform: translateY(-2px); /* Lift effect */
     }
     
     &:active {
-        transform: translateY(0);
+        transform: translateY(0); /* Pressed state */
     }
 }
 
+/* Result display area styling */
 #result {
     margin-top: 20px;
     padding: 15px;
@@ -108,15 +118,16 @@ button {
     min-height: 20px;
 }
 
+/* Copyright notice styling */
 #copyright {
     font-size: small;
     text-align: center;
     font-weight: 500;
     margin: 0;
-    color: #6a89b1;
+    color: #6a89b1; /* Muted blue color */
 }
 
-/* light mode styles */
+/* Light mode styles */
 body.light-mode {
     background-color: #f0f8fb;
 }
@@ -129,11 +140,11 @@ body.light-mode {
 }
 
 .light-mode h1 {
-    color: #105126;
+    color: #105126; /* Dark green for light mode */
 }
 
 .light-mode p i {
-    color: #a8c35c;
+    color: #a8c35c; /* Light green accent */
 }
 
 .light-mode input {
@@ -147,7 +158,7 @@ body.light-mode {
 }
 
 .light-mode #result {
-    background-color: #9aad62;
+    background-color: #9aad62; /* Light green result box */
     color: #fff;
 }
 
@@ -164,7 +175,7 @@ body.light-mode {
     color: #105126;
 }
 
-/* style for the toggle button */
+/* Theme toggle button positioning and style */
 .theme-toggle {
     position: absolute;
     top: 20px;
