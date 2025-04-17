@@ -10,10 +10,10 @@
     <div class="game-container">
         <header>
             <h1>RGB Color Guesser</h1>
-            <div>
-                <button class="difficulty-button active">Easy</button>
-                <button class="difficulty-button">Medium</button>
-                <button class="difficulty-button">Hard</button>
+            <div class="difficulty-controls">
+                <button class="difficulty-button active" data-difficulty="easy">Easy</button>
+                <button class="difficulty-button" data-difficulty="medium">Medium</button>
+                <button class="difficulty-button" data-difficulty="hard">Hard</button>
             </div>
             <div class="game-stats">
                 <div class="stat-box">
@@ -31,23 +31,24 @@
         <main>
             <section class="target-color">
                 <h2>Guess this color:</h2>
-                <div class="rgb-display">RGB(255, 255, 255)</div>
+                <div class="rgb-display" id="target-rgb">RGB(255, 255, 255)</div>
             </section>
 
-            <section class="color-options"></section>
+            <section class="color-options" id="color-options"></section>
 
-            <div class="feedback-message"></div>
+            <div class="feedback-message" id="feedback"></div>
         </main>
 
         <!-- Game over message will popup -->
-        <div class="game-over-modal">
+        <div class="game-over" id="game-over">
             <div class="modal-content">
                 <h2>Game Over!</h2>
-                <p>Your final score: <span>0</span></p>
-                <button id="restart-btn">Play Again</button>
+                <p>Your final score: <span id="final-score">0</span></p>
+                <button id="play-again">Play Again</button>
             </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
