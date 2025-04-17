@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Executes the calculateTotalButton function when the button is clicked
     calculateTotalButton.addEventListener('click', computeFuelCost);
 
-    // A helper function to validate numeric inputs which will be executed inside the computeFuelCost function
+    // A function to validate numeric inputs which will be executed inside the computeFuelCost function
     function isInvalidNumber(value) {
         return isNaN(value) || value < 0;
     }
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Checks the inputs if the value is "Not-a-Number" or NaN, and if the value is below 0
         if (isInvalidNumber(pricePerLiter) || isInvalidNumber(litersPurchased)) {
             calculationResultDisplay.textContent = 'Please enter valid positive numbers';
-            return; // Displays the message if the following criteria is met
+            return; // Displays the message if the value is anything but a positive number
         }
         
         // Calculates the total amount
