@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Game container style */
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 2px black;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+/* Difficulty controls stlying */
+.difficulty-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.difficulty-button {
+    padding: 10px 20px;
+    margin: 0 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &.active {
+        background-color: green;
+        color: white;
+    }
+}
+
+/* Game stats styling */
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.stat-box {
+    background-color: #ffffff33;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
