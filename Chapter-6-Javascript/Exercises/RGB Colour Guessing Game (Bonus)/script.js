@@ -38,6 +38,7 @@ const difficultyButtons = document.querySelectorAll('.difficulty-button');
 // Initialize game
 document.addEventListener('DOMContentLoaded', function() {
     setupDifficultyButtons();
+    resetGame();
 });
 
 // Set up difficulty buttons
@@ -50,6 +51,7 @@ function setupDifficultyButtons() {
             
             // Set new difficulty and restart game
             currentDifficulty = this.dataset.difficulty;
+            resetGame();
         });
     });
 }
@@ -140,15 +142,41 @@ function handleColorSelection(selectedColor) {
     if (colorsEqual(selectedColor, correctColor)) {
         // Correct answer
         score++;
-        scoreDisplay.textContent = score;
+        scoreDisplay.textContent = score; // Updates the score
         feedbackDisplay.textContent = 'Correct!';
         feedbackDisplay.className = 'feedback-message correct-feedback';
-        setTimeout(newRound, 1000);
+        setTimeout(newRound, 1000); // Proceed to new round
     } else {
         // Wrong answer
         lives--;
-        livesDisplay.textContent = lives;
+        livesDisplay.textContent = lives; // Updates the lives
         feedbackDisplay.textContent = 'Wrong! Try again.';
         feedbackDisplay.className = 'feedback-message incorrect-feedback';
+        
+        // Ends the game if the lives count is equal to 0
+        if (lives <= 0) {
+            endGame();
+        }
     }
 }
+
+// Modal pattern is from W3Schools How TO - CSS/JS Modal (https://www.w3schools.com/howto/howto_css_modals.asp)
+function endGame() {
+    finalScoreDisplay.textContent = score;
+    gameOverModal.style.display = 'flex'; //Game over modal will popup when the game ends
+}
+
+
+// Resets the game settings to its original state and starts a new round
+function resetGame() {
+    const settings = difficultySettings[currentDifficulty];
+    score = 0;
+    lives = settings.lives;
+    scoreDisplay.textContent = score;
+    livesDisplay.textContent = lives;
+    gameOverModal.style.display = 'none'; // Hides the modal display
+    newRound();
+}
+
+// Event listener to play a new game
+playAgainButton.addEventListener('click', resetGame);
