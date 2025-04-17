@@ -94,3 +94,43 @@ function generateSimilarColor(baseColor) {
         b: clamp(baseColor.b + Math.floor(Math.random() * variance * 2) - variance, 0, 255)
     };
 }
+
+// Regenerates new set of colors when a new round has started
+function newRound() {
+    // Clears the previous state
+    colorOptionsContainer.innerHTML = '';
+    feedbackDisplay.textContent = '';
+    feedbackDisplay.className = 'feedback-message';
+    
+    // Set the class for current difficulty
+    colorOptionsContainer.className = `color-options ${currentDifficulty}`;
+    
+    // Generates the correct color
+    correctColor = generateRandomRGB();
+    targetRgbDisplay.textContent = `RGB(${correctColor.r}, ${correctColor.g}, ${correctColor.b})`;
+    
+    // Generate color options
+    colorOptions = [{...correctColor}]; // Start with correct color
+    const settings = difficultySettings[currentDifficulty];
+    
+    // Will generate incorrect options and stops if it is equal to the number of options given for the difficulty mode
+    while (colorOptions.length < settings.options) { 
+        const similarColor = generateSimilarColor(correctColor);
+        // Ensure we don't have duplicate colors
+        if (!colorOptions.some(c => colorsEqual(c, similarColor))) {
+            colorOptions.push(similarColor);
+        }
+    }
+    
+    // Shuffle the color options
+    colorOptions = shuffleArray(colorOptions);
+    
+    // Create color option elements
+    colorOptions.forEach(color => {
+        const colorElement = document.createElement('div');
+        colorElement.className = 'color-chosen';
+        colorElement.style.backgroundColor = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        colorElement.addEventListener('click', () => handleColorSelection(color));
+        colorOptionsContainer.appendChild(colorElement);
+    });
+}
