@@ -7,6 +7,7 @@
 
 body {
     background-image: url('https://i.pinimg.com/1200x/b9/03/50/b903500f0c6cfdd52d2f6cec5211bc80.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,4 +187,16 @@ h1 {
 .color-options.hard {
     grid-template-columns: repeat(5, 130px);
     justify-content: center;
+}
+
+.side-footer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #576830;
+    color: #d0b37c;
+    border: 1px solid #39441f;
+    border-radius: 70px;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
