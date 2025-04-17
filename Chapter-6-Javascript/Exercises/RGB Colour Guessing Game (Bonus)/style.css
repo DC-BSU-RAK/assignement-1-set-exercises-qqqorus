@@ -25,6 +25,7 @@ body {
     box-shadow: 0 10px 10px #0000001a;
     overflow: hidden;
     position: relative;
+    border: 1px solid #39441f;
 }
 
 /* Header styles */
@@ -69,7 +70,7 @@ h1 {
 .game-stats {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .stat-box {
