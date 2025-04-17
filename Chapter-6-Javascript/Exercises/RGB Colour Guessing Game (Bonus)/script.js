@@ -134,3 +134,21 @@ function newRound() {
         colorOptionsContainer.appendChild(colorElement);
     });
 }
+
+// Displays the result according to the selected color
+function handleColorSelection(selectedColor) {
+    if (colorsEqual(selectedColor, correctColor)) {
+        // Correct answer
+        score++;
+        scoreDisplay.textContent = score;
+        feedbackDisplay.textContent = 'Correct!';
+        feedbackDisplay.className = 'feedback-message correct-feedback';
+        setTimeout(newRound, 1000);
+    } else {
+        // Wrong answer
+        lives--;
+        livesDisplay.textContent = lives;
+        feedbackDisplay.textContent = 'Wrong! Try again.';
+        feedbackDisplay.className = 'feedback-message incorrect-feedback';
+    }
+}
