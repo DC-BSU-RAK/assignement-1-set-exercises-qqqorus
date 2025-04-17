@@ -2,7 +2,7 @@
 const difficultySettings = {
     easy: {
         options: 3,
-        colorRange: 150, // Colors will be more distinct
+        colorRange: 150, // Colors will still be identifiable
         lives: 5
     },
     medium: {
@@ -17,8 +17,19 @@ const difficultySettings = {
     }
 };
 
-// Game status
+// Game state
 let currentScore = 0;
-let remainingLives = 5;
+let remainingLives = 3;
 let correctColor = null;
 let currentDifficulty = 'easy';
+
+// DOM Elements
+const scoreElement = document.getElementById('score');
+const livesElement = document.getElementById('lives');
+const targetRgbElement = document.getElementById('target-rgb');
+const colorOptionsElement = document.getElementById('color-options');
+const feedbackElement = document.getElementById('feedback');
+const gameOverElement = document.getElementById('game-over');
+const finalScoreElement = document.getElementById('final-score');
+const playAgainButton = document.getElementById('play-again');
+const difficultyButtons = document.querySelectorAll('.difficulty-button');
