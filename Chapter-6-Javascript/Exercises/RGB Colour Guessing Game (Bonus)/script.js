@@ -33,3 +33,23 @@ const gameOverElement = document.getElementById('game-over');
 const finalScoreElement = document.getElementById('final-score');
 const playAgainButton = document.getElementById('play-again');
 const difficultyButtons = document.querySelectorAll('.difficulty-button');
+
+// Initialize game
+document.addEventListener('DOMContentLoaded', function() {
+    setupDifficultyButtons();
+});
+
+// Set up difficulty buttons
+function setupDifficultyButtons() {
+    difficultyButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active button
+            difficultyButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Set new difficulty and restart game
+            currentDifficulty = this.dataset.difficulty;
+        });
+    });
+}
+
